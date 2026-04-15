@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Starbucks Barista Listening Trainer</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #f9f6f0;
+    color: #1a1a1a;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+  #app {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1.75rem;
+  }
+  .logo {
+    width: 44px; height: 44px;
+    background: #00704a;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 18px; font-weight: 700; flex-shrink: 0;
+  }
+  .header h1 { font-size: 20px; font-weight: 600; color: #1a1a1a; }
+  .header p  { font-size: 13px; color: #666; margin-top: 3px; }
+
+  .stats-row { display: flex; gap: 10px; margin-bottom: 1.25rem; }
+  .stat {
+    flex: 1; background: #fff;
+    border: 1px solid #e5e5e5; border-radius: 10px;
+    padding: 12px; text-align: center;
+  }
+  .stat-num { font-size: 22px; font-weight: 600; color: #1a1a1a; }
+  .stat-label { font-size: 11px; color: #888; margin-top: 3px; }
+
+  .customer-card {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    padding: 1.1rem 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .customer-row { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+  .avatar {
+    width: 40px; height: 40px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 15px; font-weight: 600; flex-shrink: 0;
+  }
+  .cust-name { font-size: 15px; font-weight: 500; color: #1a1a1a; }
+  .cust-meta { font-size: 12px; color: #888; margin-top: 2px; }
+  .tags { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+  .tag {
+    font-size: 11px; padding: 3px 9px;
+    border-radius: 20px; border: 1px solid #e0e0e0;
+    color: #666; background: #f5f5f5;
+  }
+  .order-display {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    margin-top: 12px;
+    min-height: 46px;
+    display: flex; align-items: center; flex-wrap: wrap; gap: 4px;
+    line-height: 1.7; font-size: 14px;
+  }
+  .order-placeholder { color: #aaa; font-style: italic; }
+
+  .controls-section {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 14px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; flex-wrap: wrap; }
+  .row:last-child { margin-bottom: 0; }
+  label.ctrl-label { font-size: 13px; color: #555; white-space: nowrap; min-width: 52px; }
+
+  input[type=range] {
+    flex: 1; height: 4px; cursor: pointer;
+    accent-color: #00704a;
+  }
+  .speed-val { font-size: 13px; font-weight: 500; min-width: 38px; text-align: right; color: #1a1a1a; }
+
+  select {
+    flex: 1; font-size: 13px; padding: 7px 10px;
+    border-radius: 8px; border: 1px solid #d0d0d0;
+    background: #fff; color: #1a1a1a; cursor: pointer;
+    min-width: 0;
+  }
+  button {
+    font-size: 13px; padding: 8px 16px;
+    border-radius: 8px; border: 1px solid #d0d0d0;
+    background: #fff; color: #1a1a1a; cursor: pointer;
+    transition: background 0.15s, transform 0.1s;
+    white-space: nowrap;
+  }
+  button:hover  { background: #f0f0f0; }
+  button:active { transform: scale(0.97); }
+  button:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+  .btn-primary { background: #00704a; color: #fff; border-color: #00704a; }
+  .btn-primary:hover { background: #005c3b; }
+  .btn-green { background: #e6f4ee; color: #00704a; border-color: #b2d9c8; }
+  .btn-green:hover { background: #d0ecdf; }
+
+  .input-row { display: flex; gap: 8px; margin-top: 1rem; }
+  input[type=text] {
+    flex: 1; font-size: 15px; padding: 10px 14px;
+    border-radius: 8px; border: 1px solid #d0d0d0;
+    background: #fff; color: #1a1a1a; outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  input[type=text]:focus {
+    border-color: #00704a;
+    box-shadow: 0 0 0 3px rgba(0,112,74,0.12);
+  }
+  input[type=text]:disabled { background: #f5f5f5; color: #aaa; }
+
+  .hint { font-size: 12px; color: #888; margin-top: 6px; }
+
+  .feedback {
+    border-radius: 8px; padding: 0.8rem 1rem;
+    margin-top: 1rem; font-size: 14px; line-height: 1.5;
+  }
+  .feedback.correct { background: #e6f4ee; color: #1a5c35; border: 1px solid #b2d9c8; }
+  .feedback.partial  { background: #fff8e1; color: #7a5c00; border: 1px solid #f0d080; }
+  .feedback.wrong    { background: #fdecea; color: #8b1a1a; border: 1px solid #f5b8b0; }
+
+  .action-row { display: flex; gap: 8px; margin-top: 1rem; flex-wrap: wrap; }
+
+  .speaking-wrap {
+    display: none;
+    align-items: center; gap: 8px;
+    margin-top: 10px; font-size: 13px; color: #00704a;
+  }
+  .dot {
+    width: 8px; height: 8px; background: #00704a;
+    border-radius: 50%; animation: pulse 1s infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.25} }
+
+  .notice {
+    font-size: 12px; padding: 8px 12px;
+    border-radius: 8px; margin-top: 8px;
+    background: #fff8e1; color: #7a5c00;
+    border: 1px solid #f0d080; display: none;
+  }
+  .diff-miss {
+    background: #fef3c7; padding: 1px 4px;
+    border-radius: 3px; color: #92400e;
+  }
+
+  @media (max-width: 480px) {
+    .stats-row { gap: 6px; }
+    .stat-num { font-size: 18px; }
+    button { padding: 8px 12px; }
+  }
+</style>
+</head>
+<body>
+<div id="app">
+
+  <div class="header">
+    <div class="logo">SB</div>
+    <div>
+      <h1>Barista Listening Trainer</h1>
+      <p>Listen carefully and type what the customer orders</p>
+    </div>
+  </div>
+
+  <div class="stats-row">
+    <div class="stat"><div class="stat-num" id="s-correct">0</div><div class="stat-label">Correct</div></div>
+    <div class="stat"><div class="stat-num" id="s-total">0</div><div class="stat-label">Total</div></div>
+    <div class="stat"><div class="stat-num" id="s-pct">—</div><div class="stat-label">Accuracy</div></div>
+  </div>
+
+  <div class="customer-card">
+    <div class="customer-row">
+      <div class="avatar" id="avatar" style="background:#e6f4ee;color:#00704a">?</div>
+      <div>
+        <div class="cust-name" id="cust-name">Press "New Customer" to start</div>
+        <div class="cust-meta" id="cust-meta">A new customer will walk up to the counter</div>
+      </div>
+    </div>
+    <div class="tags" id="cust-tags"></div>
+    <div class="order-display" id="order-display">
+      <span class="order-placeholder">Order will appear here after you answer</span>
+    </div>
+  </div>
+
+  <div class="controls-section">
+    <div class="row">
+      <label class="ctrl-label">Speed</label>
+      <input type="range" id="speed-range" min="0.6" max="1.4" step="0.1" value="0.9">
+      <span class="speed-val" id="speed-val">0.9x</span>
+    </div>
+    <div class="row">
+      <label class="ctrl-label">Voice</label>
+      <select id="voice-select"><option value="">Loading voices...</option></select>
+      <button onclick="forceLoadVoices()">Reload</button>
+      <button id="btn-replay" disabled onclick="replayOrder()">Replay</button>
+    </div>
+    <div class="notice" id="notice"></div>
+  </div>
+
+  <div class="speaking-wrap" id="speaking-wrap">
+    <div class="dot"></div>
+    <span id="speaking-txt">Speaking...</span>
+  </div>
+
+  <div class="input-row">
+    <input type="text" id="answer-input" placeholder="Type what you heard..." disabled autocomplete="off" spellcheck="false">
+    <button id="btn-submit" onclick="submitAnswer()" disabled>Check</button>
+  </div>
+  <div class="hint" id="hint-text"></div>
+  <div id="feedback" style="display:none" class="feedback"></div>
+
+  <div class="action-row">
+    <button class="btn-primary" id="btn-new" onclick="newCustomer()">New Customer</button>
+    <button id="btn-skip" disabled onclick="skipReveal()">Reveal Answer</button>
+  </div>
+
+</div><!-- #app -->
+
+<script>
+const MENU = [
+  "Grande Pike Place Roast",
+  "Venti Caramel Macchiato",
+  "Tall Vanilla Latte",
+  "Grande Iced Caramel Macchiato",
+  "Venti Cold Brew",
+  "Tall Pumpkin Spice Latte",
+  "Grande Mocha Frappuccino",
+  "Venti Green Tea Frappuccino",
+  "Tall Flat White",
+  "Grande Americano",
+  "Venti Chai Tea Latte",
+  "Grande Iced Matcha Latte",
+  "Tall Honey Oat Milk Latte",
+  "Grande Peppermint Mocha",
+  "Venti Strawberry Acai Refresher",
+  "Tall Dragon Drink",
+  "Grande Pink Drink",
+  "Tall Iced Brown Sugar Oat Milk Shaken Espresso",
+  "Grande White Chocolate Mocha",
+  "Tall Cinnamon Dolce Latte",
+  "Grande Java Chip Frappuccino",
+  "Tall Nitro Cold Brew",
+  "Venti Caramel Ribbon Crunch Frappuccino",
+  "Grande Teavana Shaken Iced Passion Tango Tea",
+  "Tall Blonde Roast",
+  "Grande Cappuccino",
+  "Venti Iced White Chocolate Mocha",
+  "Grande Toasted Vanilla Oat Milk Shaken Espresso"
+];
+const FOOD = [
+  "Sausage Cheddar Egg Sandwich",
+  "Butter Croissant",
+  "Chocolate Croissant",
+  "Blueberry Muffin",
+  "Banana Nut Bread",
+  "Pumpkin Scone",
+  "Everything Bagel with cream cheese",
+  "Spinach Feta Egg Wrap",
+  "Double Smoked Bacon Cheddar Egg Sandwich",
+  "Ham and Swiss Panini",
+  "Turkey and Pesto Panini",
+  "Vanilla Bean Cake Pop",
+  "Chocolate Brownie",
+  "Lemon Loaf",
+  "Classic Coffee Cake",
+  "Impossible Breakfast Sandwich",
+  "Petite Vanilla Scone"
+];
+const MODIFIERS = [
+  "with an extra shot",
+  "no whip",
+  "extra hot",
+  "iced",
+  "with oat milk",
+  "with almond milk",
+  "with coconut milk",
+  "light ice",
+  "no sugar",
+  "extra caramel drizzle",
+  "with vanilla syrup",
+  "with two pumps of hazelnut",
+  "skinny",
+  "with sugar-free vanilla",
+  "decaf",
+  "half sweet",
+  "extra foam"
+];
+const CUSTOMERS = [
+  { name:"Emma",   age:"teenager",  gender:"female", region:"California",   color:"#fbeaf0", tc:"#993556", emoji:"E", speedMod:1.12, notes:["fast talker","casual","uses slang"] },
+  { name:"Michael",age:"30s",       gender:"male",   region:"New York",     color:"#e6f1fb", tc:"#185fa5", emoji:"M", speedMod:0.95, notes:["direct","no-nonsense"] },
+  { name:"Margaret",age:"elderly",  gender:"female", region:"Southern US",  color:"#eaf3de", tc:"#3b6d11", emoji:"G", speedMod:0.70, notes:["slow and deliberate","very polite"] },
+  { name:"Jake",   age:"20s",       gender:"male",   region:"Midwest",      color:"#faeeda", tc:"#854f0b", emoji:"J", speedMod:1.0,  notes:["friendly","casual"] },
+  { name:"Sofia",  age:"40s",       gender:"female", region:"Texas",        color:"#e1f5ee", tc:"#0f6e56", emoji:"S", speedMod:0.88, notes:["very specific","adds filler words"] },
+  { name:"David",  age:"50s",       gender:"male",   region:"Boston",       color:"#eeedfe", tc:"#533ab7", emoji:"D", speedMod:0.80, notes:["concise","businesslike"] },
+  { name:"Aisha",  age:"20s",       gender:"female", region:"Atlanta",      color:"#fcebeb", tc:"#a32d2d", emoji:"A", speedMod:1.08, notes:["upbeat","energetic"] },
+  { name:"Carlos", age:"30s",       gender:"male",   region:"Miami",        color:"#f1efe8", tc:"#5f5e5a", emoji:"C", speedMod:1.0,  notes:["warm","Spanish-influenced accent"] },
+  { name:"Grace",  age:"60s",       gender:"female", region:"Midwest",      color:"#e1f5ee", tc:"#0f6e56", emoji:"G", speedMod:0.75, notes:["slow","very clear pronunciation"] },
+  { name:"Tyler",  age:"teens",     gender:"male",   region:"California",   color:"#faeeda", tc:"#854f0b", emoji:"T", speedMod:1.15, notes:["very fast","mumbles"] },
+];
+
+let voices = [];
+let currentOrder = "";
+let currentCustomer = null;
+let correct = 0, total = 0;
+let orderRevealed = false;
+let isSpeaking = false;
+
+// ── Speed slider ──
+const speedRange = document.getElementById("speed-range");
+const speedValEl = document.getElementById("speed-val");
+speedRange.oninput = () => {
+  speedValEl.textContent = parseFloat(speedRange.value).toFixed(1) + "x";
+};
+
+// ── Voice loading ──
+function setNotice(msg, show) {
+  const el = document.getElementById("notice");
+  el.textContent = msg;
+  el.style.display = show ? "block" : "none";
+}
+
+function populateVoiceSelect(vlist) {
+  const enVoices = vlist.filter(v => v.lang && v.lang.startsWith("en"));
+  voices = enVoices.length > 0 ? enVoices : vlist;
+  const sel = document.getElementById("voice-select");
+  if (voices.length === 0) {
+    sel.innerHTML = '<option value="-1">No voices found</option>';
+    setNotice("No voices found. Try Chrome or Edge on desktop.", true);
+    return;
+  }
+  sel.innerHTML = voices.map((v, i) =>
+    `<option value="${i}">${v.name} (${v.lang})${v.default ? " ★" : ""}</option>`
+  ).join("");
+  setNotice("", false);
+}
+
+function forceLoadVoices() {
+  if (!window.speechSynthesis) {
+    setNotice("Your browser does not support speech synthesis.", true);
+    return;
+  }
+  const v = window.speechSynthesis.getVoices();
+  if (v && v.length > 0) {
+    populateVoiceSelect(v);
+    setNotice(voices.length + " voices loaded ✓", true);
+    setTimeout(() => setNotice("", false), 2500);
+  } else {
+    setNotice("Still loading — click Reload again in a moment.", true);
+  }
+}
+
+function initVoices() {
+  if (!window.speechSynthesis) {
+    setNotice("Speech synthesis not supported in this browser.", true);
+    return;
+  }
+  // onvoiceschanged fires in Chrome
+  window.speechSynthesis.onvoiceschanged = () => {
+    const v = window.speechSynthesis.getVoices();
+    if (v && v.length > 0) populateVoiceSelect(v);
+  };
+  // Polling fallback for Safari / Firefox / iframe
+  let attempts = 0;
+  (function poll() {
+    const v = window.speechSynthesis.getVoices();
+    if (v && v.length > 0) { populateVoiceSelect(v); return; }
+    if (++attempts < 30) setTimeout(poll, 300);
+    else setNotice("Voices not loaded. Click the Reload button.", true);
+  })();
+}
+
+initVoices();
+
+// ── Helpers ──
+function pickRandom(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+
+function generateOrder() {
+  const starters = ["Can I get","I'll have","I'd like","Can I please get","Let me get","I want"];
+  const drink = pickRandom(MENU);
+  let order = pickRandom(starters) + " a " + drink;
+  if (Math.random() > 0.42) order += ", " + pickRandom(MODIFIERS);
+  if (Math.random() > 0.52) order += ", and a " + pickRandom(FOOD);
+  return order;
+}
+
+function speakOrder(text, customer, callback) {
+  if (!window.speechSynthesis) { alert("Speech synthesis not available."); return; }
+  window.speechSynthesis.cancel();
+  setTimeout(() => {
+    const utt = new SpeechSynthesisUtterance(text);
+    const sel = document.getElementById("voice-select");
+    const idx = parseInt(sel.value);
+    if (voices.length > 0 && idx >= 0 && voices[idx]) utt.voice = voices[idx];
+    const base = parseFloat(speedRange.value);
+    utt.rate   = Math.min(Math.max(base * (customer.speedMod || 1.0), 0.1), 10);
+    utt.pitch  = customer.gender === "female" ? 1.1 : 0.88;
+    utt.volume = 1;
+
+    const sw = document.getElementById("speaking-wrap");
+    const st = document.getElementById("speaking-txt");
+    sw.style.display = "flex";
+    st.textContent = customer.name + " is speaking...";
+    isSpeaking = true;
+
+    utt.onend = () => {
+      sw.style.display = "none"; isSpeaking = false;
+      if (callback) callback();
+    };
+    utt.onerror = (e) => {
+      sw.style.display = "none"; isSpeaking = false;
+      if (e.error !== "interrupted" && callback) callback();
+    };
+    window.speechSynthesis.speak(utt);
+  }, 120);
+}
+
+// ── Game logic ──
+function newCustomer() {
+  if (isSpeaking) window.speechSynthesis.cancel();
+  if (voices.length === 0) {
+    forceLoadVoices();
+    setNotice("No voices loaded yet — click Reload first, then try again.", true);
+    return;
+  }
+  orderRevealed = false;
+  currentCustomer = pickRandom(CUSTOMERS);
+  currentOrder    = generateOrder();
+
+  document.getElementById("cust-name").textContent =
+    currentCustomer.name + " (" + currentCustomer.age + ", " + currentCustomer.region + ")";
+  document.getElementById("cust-meta").textContent =
+    currentCustomer.gender + " customer";
+  const av = document.getElementById("avatar");
+  av.textContent   = currentCustomer.emoji;
+  av.style.background = currentCustomer.color;
+  av.style.color      = currentCustomer.tc;
+  document.getElementById("cust-tags").innerHTML =
+    currentCustomer.notes.map(n => `<span class="tag">${n}</span>`).join("");
+
+  document.getElementById("order-display").innerHTML =
+    `<span class="order-placeholder">Order will appear here after you answer</span>`;
+  document.getElementById("feedback").style.display = "none";
+  document.getElementById("hint-text").textContent  = "";
+
+  const inp = document.getElementById("answer-input");
+  inp.value = ""; inp.disabled = false; inp.placeholder = "Type what you heard...";
+  document.getElementById("btn-submit").disabled = false;
+  document.getElementById("btn-skip").disabled   = false;
+  document.getElementById("btn-replay").disabled = false;
+
+  speakOrder(currentOrder, currentCustomer, () => inp.focus());
+}
+
+function replayOrder() {
+  if (!currentOrder || !currentCustomer) return;
+  speakOrder(currentOrder, currentCustomer, null);
+}
+
+function normalize(t) {
+  return t.toLowerCase()
+    .replace(/[,\.!?']/g, "")
+    .replace(/\b(can|i|get|have|please|a|an|the|let|me|id|like|and|want)\b/g, "")
+    .replace(/\s+/g, " ").trim();
+}
+
+function levenshtein(a, b) {
+  const m = a.length, n = b.length;
+  const dp = Array.from({length: m+1}, (_, i) =>
+    Array.from({length: n+1}, (_, j) => i === 0 ? j : j === 0 ? i : 0));
+  for (let i = 1; i <= m; i++)
+    for (let j = 1; j <= n; j++)
+      dp[i][j] = a[i-1] === b[j-1]
+        ? dp[i-1][j-1]
+        : 1 + Math.min(dp[i-1][j], dp[i][j-1], dp[i-1][j-1]);
+  return dp[m][n];
+}
+
+function calcScore(user, ref) {
+  const u = normalize(user).split(" ").filter(Boolean);
+  const c = normalize(ref).split(" ").filter(Boolean);
+  let matched = 0;
+  c.forEach(w => { if (u.some(uw => levenshtein(uw, w) <= 1)) matched++; });
+  return matched / Math.max(c.length, 1);
+}
+
+function revealWithDiff(userAnswer) {
+  const od = document.getElementById("order-display");
+  const userWords = normalize(userAnswer || "").split(" ").filter(Boolean);
+  const tokens = currentOrder.split(" ");
+  let html = "";
+  tokens.forEach(w => {
+    const wn = normalize(w);
+    if (!wn) { html += w + " "; return; }
+    const matched = userAnswer && userWords.some(uw => levenshtein(uw, wn) <= 1);
+    html += matched || !userAnswer
+      ? `<span>${w}</span> `
+      : `<span class="diff-miss">${w}</span> `;
+  });
+  od.innerHTML = html.trim();
+}
+
+function submitAnswer() {
+  if (!currentOrder || orderRevealed) return;
+  const inp = document.getElementById("answer-input");
+  const ans = inp.value.trim();
+  if (!ans) {
+    document.getElementById("hint-text").textContent = "Please type what you heard first.";
+    return;
+  }
+  orderRevealed = true; total++;
+  const sc = calcScore(ans, currentOrder);
+  const fb = document.getElementById("feedback");
+  fb.style.display = "block";
+  if (sc >= 0.85) {
+    correct++;
+    fb.className   = "feedback correct";
+    fb.textContent = "Excellent! You got it. Yellow highlights = any words you missed.";
+  } else if (sc >= 0.55) {
+    fb.className   = "feedback partial";
+    fb.textContent = "Close! You got most of it. Yellow = what you missed.";
+  } else {
+    fb.className   = "feedback wrong";
+    fb.textContent = "Keep practicing! Full order is shown below. Yellow = what you missed.";
+  }
+  revealWithDiff(ans);
+  updateStats();
+  inp.disabled = true;
+  document.getElementById("btn-submit").disabled = true;
+  document.getElementById("btn-skip").disabled   = true;
+  document.getElementById("hint-text").textContent = 'Press "New Customer" to continue.';
+}
+
+function skipReveal() {
+  if (!currentOrder || orderRevealed) return;
+  orderRevealed = true; total++;
+  revealWithDiff(null);
+  const fb = document.getElementById("feedback");
+  fb.style.display = "block"; fb.className = "feedback wrong";
+  fb.textContent = "Answer revealed. Listen carefully next time!";
+  updateStats();
+  document.getElementById("answer-input").disabled   = true;
+  document.getElementById("btn-submit").disabled     = true;
+  document.getElementById("btn-skip").disabled       = true;
+  document.getElementById("hint-text").textContent   = 'Press "New Customer" to continue.';
+}
+
+function updateStats() {
+  document.getElementById("s-correct").textContent = correct;
+  document.getElementById("s-total").textContent   = total;
+  document.getElementById("s-pct").textContent     = total > 0 ? Math.round(correct / total * 100) + "%" : "—";
+}
+
+document.getElementById("answer-input").addEventListener("keydown", e => {
+  if (e.key === "Enter") submitAnswer();
+});
+</script>
+</body>
+</html>

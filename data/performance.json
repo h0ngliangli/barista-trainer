@@ -1,0 +1,16 @@
+{
+  "sessions": [
+    {
+      "customerName": "Chloe",
+      "canonicalOrder": "Grande Iced Caramel Macchiato, with oat milk, no whip, Chocolate Croissant",
+      "barristaInput": "iced cream mocciato, grande, no whip, chocolate crossant",
+      "score": 0.5454545454545454,
+      "correct": false,
+      "timestamp": "2026-04-15T19:25:52.327Z"
+    }
+  ],
+  "totals": {
+    "correct": 0,
+    "total": 1
+  }
+}
