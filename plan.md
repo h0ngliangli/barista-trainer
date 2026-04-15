@@ -35,7 +35,7 @@ Create a trainer web application that trains baristas to accurately capture cust
 - Use standalone next.js for both frontend and backend development.
 - Use Typescript for coding.
 - Use Tailwind CSS for styling.
-- Use Gemini API with provided key in .env.local (GEMINI_API_KEY=AIzaSyDEY2maBBd5INlX3-CtAWIIco3A32l8ZNM)
+- Use Gemini API with provided key in .env.local
 - Use gemini-2.5-flash-tts for text-to-speech functionality.
 - Use gemini-2.5-flash for generating customer profiles and orders.
 - Collect barista performance data in a local json file.
