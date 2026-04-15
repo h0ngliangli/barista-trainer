@@ -15,10 +15,18 @@
       "score": 0.8,
       "correct": false,
       "timestamp": "2026-04-15T21:32:52.749Z"
+    },
+    {
+      "customerName": "Brenda",
+      "canonicalOrder": "Tall Honey Oat Milk Latte, Pumpkin Scone",
+      "barristaInput": "tall honey oat milk latte, pumpkin scone",
+      "score": 1,
+      "correct": true,
+      "timestamp": "2026-04-15T21:37:37.361Z"
     }
   ],
   "totals": {
-    "correct": 0,
-    "total": 2
+    "correct": 1,
+    "total": 3
   }
 }

@@ -315,10 +315,9 @@ export default function Home() {
             onChange={(e) => setAnswer(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleCheck()}
             placeholder="Type the items ordered (e.g. grande iced latte, chocolate croissant)..."
-            disabled={!isInputActive}
             autoComplete="off"
             spellCheck={false}
-            className="flex-1 text-sm px-4 py-2.5 rounded-lg border border-neutral-300 bg-white text-neutral-900 outline-none transition focus:border-[#00704a] focus:ring-2 focus:ring-[#00704a]/10 disabled:bg-neutral-50 disabled:text-neutral-400 disabled:cursor-not-allowed"
+            className="flex-1 text-sm px-4 py-2.5 rounded-lg border border-neutral-300 bg-white text-neutral-900 outline-none transition focus:border-[#00704a] focus:ring-2 focus:ring-[#00704a]/10"
           />
           <button
             onClick={handleCheck}
