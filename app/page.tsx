@@ -94,45 +94,28 @@ export default function Home() {
       .catch(() => {});
   }, []);
 
-  const playAudio = useCallback(
-    async (orderText: string, cust: CustomerProfile) => {
+  const playAudioUrl = useCallback(
+    async (url: string, custName: string) => {
+      if (!audioRef.current) return;
       setAudioError("");
       setAppState("speaking");
-      setLoadingMsg(`${cust.name} is speaking...`);
+      setLoadingMsg(`${custName} is speaking...`);
 
-      if (currentAudioUrl.current) {
-        URL.revokeObjectURL(currentAudioUrl.current);
-        currentAudioUrl.current = null;
-      }
-
+      audioRef.current.src = url;
+      audioRef.current.onended = () => {
+        setAppState("waiting");
+        setLoadingMsg("");
+        inputRef.current?.focus();
+      };
+      audioRef.current.onerror = () => {
+        setAppState("waiting");
+        setLoadingMsg("");
+        setAudioError(
+          "Audio playback failed. You can still type and check your answer."
+        );
+      };
       try {
-        const res = await fetch("/api/tts", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ text: orderText }),
-        });
-        if (!res.ok) throw new Error("TTS API error");
-
-        const blob = await res.blob();
-        const url = URL.createObjectURL(blob);
-        currentAudioUrl.current = url;
-
-        if (audioRef.current) {
-          audioRef.current.src = url;
-          audioRef.current.onended = () => {
-            setAppState("waiting");
-            setLoadingMsg("");
-            inputRef.current?.focus();
-          };
-          audioRef.current.onerror = () => {
-            setAppState("waiting");
-            setLoadingMsg("");
-            setAudioError(
-              "Audio playback failed. You can still type and check your answer."
-            );
-          };
-          await audioRef.current.play();
-        }
+        await audioRef.current.play();
       } catch (err) {
         console.error(err);
         setAppState("waiting");
@@ -145,10 +128,40 @@ export default function Home() {
     []
   );
 
+  const playAudio = useCallback(
+    async (orderText: string, cust: CustomerProfile) => {
+      try {
+        const res = await fetch("/api/tts", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ text: orderText }),
+        });
+        if (!res.ok) throw new Error("TTS API error");
+
+        const blob = await res.blob();
+        const url = URL.createObjectURL(blob);
+        currentAudioUrl.current = url;
+        await playAudioUrl(url, cust.name);
+      } catch (err) {
+        console.error(err);
+        setAppState("waiting");
+        setLoadingMsg("");
+        setAudioError(
+          "Speech generation failed. You can still type and check your answer."
+        );
+      }
+    },
+    [playAudioUrl]
+  );
+
   const handleNewCustomer = useCallback(async () => {
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.src = "";
+    }
+    if (currentAudioUrl.current) {
+      URL.revokeObjectURL(currentAudioUrl.current);
+      currentAudioUrl.current = null;
     }
     setAppState("loading");
     setLoadingMsg("Generating customer...");
@@ -173,8 +186,12 @@ export default function Home() {
 
   const handleReplay = useCallback(() => {
     if (!customer || (appState !== "waiting" && appState !== "revealed")) return;
-    playAudio(customer.orderText, customer);
-  }, [customer, appState, playAudio]);
+    if (currentAudioUrl.current) {
+      playAudioUrl(currentAudioUrl.current, customer.name);
+    } else {
+      playAudio(customer.orderText, customer);
+    }
+  }, [customer, appState, playAudioUrl, playAudio]);
 
   const handleCheck = useCallback(async () => {
     if (!customer || appState !== "waiting") return;
