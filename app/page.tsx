@@ -199,7 +199,7 @@ export default function Home() {
     if (!trimmed) return;
 
     const score = calcScore(trimmed, customer.canonicalOrder);
-    const diff = buildDiff(trimmed, customer.orderText);
+    const diff = buildDiff(trimmed, customer.canonicalOrder);
     setDiffWords(diff);
     setAppState("revealed");
 
@@ -238,7 +238,7 @@ export default function Home() {
 
   const handleReveal = useCallback(async () => {
     if (!customer || appState !== "waiting") return;
-    const diff = buildDiff(null, customer.orderText);
+    const diff = buildDiff(null, customer.canonicalOrder);
     setDiffWords(diff);
     setAppState("revealed");
     setFeedback({
@@ -314,7 +314,7 @@ export default function Home() {
             value={answer}
             onChange={(e) => setAnswer(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && handleCheck()}
-            placeholder="Type what you heard..."
+            placeholder="Type the items ordered (e.g. grande iced latte, chocolate croissant)..."
             disabled={!isInputActive}
             autoComplete="off"
             spellCheck={false}
