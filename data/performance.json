@@ -167,10 +167,66 @@
       "score": 0.9090909090909091,
       "correct": true,
       "timestamp": "2026-04-16T16:31:16.680Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Grande Pike Place Roast, Butter Croissant",
+      "barristaInput": "grande pipe place roast, butter croissant",
+      "score": 1,
+      "correct": true,
+      "timestamp": "2026-04-16T17:46:10.677Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Venti Iced White Chocolate Mocha, light ice, Chocolate Croissant",
+      "barristaInput": "venti i mocha, light ice, chocolate croissant",
+      "score": 0.8888888888888888,
+      "correct": true,
+      "timestamp": "2026-04-16T17:46:37.692Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Venti Cold Brew, Blueberry Muffin",
+      "barristaInput": "venti cold brew, blueberry muffin",
+      "score": 1,
+      "correct": true,
+      "timestamp": "2026-04-16T17:54:02.261Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Venti Iced White Chocolate Mocha, with oat milk, Spinach Feta Egg Wrap",
+      "barristaInput": "venti iced white chocolate mocha, with oat milk, spinach Feta egg wrap",
+      "score": 1,
+      "correct": true,
+      "timestamp": "2026-04-16T17:55:04.833Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Grande Caramel Macchiato, with almond milk, Blueberry Muffin",
+      "barristaInput": "grande caramel macchiato, almond milk, blueberry muffin",
+      "score": 0.875,
+      "correct": true,
+      "timestamp": "2026-04-16T17:55:49.041Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Grande Americano, with an extra shot, extra hot, Everything Bagel with cream cheese",
+      "barristaInput": "grande americano, with extra shot and extra hot, bagel with cream cheese",
+      "score": 0.9166666666666666,
+      "correct": true,
+      "timestamp": "2026-04-16T17:56:39.764Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Grande Americano, with an extra shot, extra hot, Everything Bagel with cream cheese",
+      "barristaInput": "",
+      "score": 0,
+      "correct": false,
+      "timestamp": "2026-04-16T17:57:04.828Z"
     }
   ],
   "totals": {
-    "correct": 15,
-    "total": 21
+    "correct": 21,
+    "total": 28
   }
 }

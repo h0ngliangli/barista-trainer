@@ -49,18 +49,23 @@ Important:
 
 // Gemini TTS returns raw 16-bit PCM at 24 kHz mono.
 // Browsers need a WAV container around that PCM data to play it.
-function pcmToWav(pcm: Buffer, sampleRate = 24000, channels = 1, bitsPerSample = 16): Buffer {
+function pcmToWav(
+  pcm: Buffer,
+  sampleRate = 24000,
+  channels = 1,
+  bitsPerSample = 16,
+): Buffer {
   const byteRate = (sampleRate * channels * bitsPerSample) / 8;
   const blockAlign = (channels * bitsPerSample) / 8;
   const dataSize = pcm.length;
   const header = Buffer.alloc(44);
 
   header.write("RIFF", 0);
-  header.writeUInt32LE(36 + dataSize, 4);   // file size - 8
+  header.writeUInt32LE(36 + dataSize, 4); // file size - 8
   header.write("WAVE", 8);
   header.write("fmt ", 12);
-  header.writeUInt32LE(16, 16);             // PCM chunk size
-  header.writeUInt16LE(1, 20);              // audio format: PCM
+  header.writeUInt32LE(16, 16); // PCM chunk size
+  header.writeUInt16LE(1, 20); // audio format: PCM
   header.writeUInt16LE(channels, 22);
   header.writeUInt32LE(sampleRate, 24);
   header.writeUInt32LE(byteRate, 28);
@@ -72,8 +77,14 @@ function pcmToWav(pcm: Buffer, sampleRate = 24000, channels = 1, bitsPerSample =
   return Buffer.concat([header, pcm]);
 }
 
-export async function generateTTS(text: string, gender: string = "female"): Promise<Buffer> {
-  const voiceName = gender === "male" ? "Charon" : "Aoede";
+export async function generateTTS(
+  text: string,
+  gender: string = "female",
+): Promise<Buffer> {
+  const voiceName =
+    gender === "male"
+      ? ["Charon", "Fenrir", "Puck"][Math.floor(Math.random() * 3)]
+      : ["Aoede", "Kore", "Zephyr"][Math.floor(Math.random() * 3)];
   const response = await genai.models.generateContent({
     model: "gemini-2.5-flash-preview-tts",
     contents: [{ role: "user", parts: [{ text }] }],
