@@ -223,10 +223,34 @@
       "score": 0,
       "correct": false,
       "timestamp": "2026-04-16T17:57:04.828Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Venti Caramel Macchiato, iced, light ice, extra caramel drizzle, Pumpkin Scone",
+      "barristaInput": "iced venti caramel macchiato, with light ice, extra caramel light drizzle, pumpkin scone",
+      "score": 1,
+      "correct": true,
+      "timestamp": "2026-04-16T21:30:18.753Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Venti Iced White Chocolate Mocha, with oat milk, half sweet, Banana Nut Bread",
+      "barristaInput": "venti iced white chocolate macchiato, with oat milk, half sweet, banana nut bread",
+      "score": 0.9230769230769231,
+      "correct": true,
+      "timestamp": "2026-04-16T21:33:11.803Z"
+    },
+    {
+      "customerName": "Leo",
+      "canonicalOrder": "Grande Iced Caramel Macchiato, no whip, Spinach Feta Egg Wrap",
+      "barristaInput": "grande iced caramel mocchiato, no whip, spniach feta egg wrap",
+      "score": 0.9,
+      "correct": true,
+      "timestamp": "2026-04-16T23:11:06.974Z"
     }
   ],
   "totals": {
-    "correct": 21,
-    "total": 28
+    "correct": 24,
+    "total": 31
   }
 }

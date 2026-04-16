@@ -85,6 +85,7 @@ export default function Home() {
   const inputRef = useRef<HTMLInputElement>(null);
   const candidateRef = useRef<{ customer: CustomerProfile; audioUrl: string } | null>(null);
   const isPrefetchingRef = useRef(false);
+  const answeredRef = useRef(false);
 
   useEffect(() => {
     fetch("/api/performance")
@@ -97,7 +98,7 @@ export default function Home() {
   }, []);
 
   const playAudioUrl = useCallback(
-    async (url: string, custName: string) => {
+    async (url: string, custName: string, returnState: AppState = "waiting") => {
       if (!audioRef.current) return;
       setAudioError("");
       setAppState("speaking");
@@ -105,12 +106,12 @@ export default function Home() {
 
       audioRef.current.src = url;
       audioRef.current.onended = () => {
-        setAppState("waiting");
+        setAppState(returnState);
         setLoadingMsg("");
-        inputRef.current?.focus();
+        if (returnState === "waiting") inputRef.current?.focus();
       };
       audioRef.current.onerror = () => {
-        setAppState("waiting");
+        setAppState(returnState);
         setLoadingMsg("");
         setAudioError(
           "Audio playback failed. You can still type and check your answer."
@@ -120,7 +121,7 @@ export default function Home() {
         await audioRef.current.play();
       } catch (err) {
         console.error(err);
-        setAppState("waiting");
+        setAppState(returnState);
         setLoadingMsg("");
         setAudioError(
           "Speech generation failed. You can still type and check your answer."
@@ -155,7 +156,7 @@ export default function Home() {
   }, []);
 
   const playAudio = useCallback(
-    async (orderText: string, cust: CustomerProfile) => {
+    async (orderText: string, cust: CustomerProfile, returnState: AppState = "waiting") => {
       try {
         const res = await fetch("/api/tts", {
           method: "POST",
@@ -167,11 +168,11 @@ export default function Home() {
         const blob = await res.blob();
         const url = URL.createObjectURL(blob);
         currentAudioUrl.current = url;
-        await playAudioUrl(url, cust.name);
+        await playAudioUrl(url, cust.name, returnState);
         prefetchCandidate();
       } catch (err) {
         console.error(err);
-        setAppState("waiting");
+        setAppState(returnState);
         setLoadingMsg("");
         setAudioError(
           "Speech generation failed. You can still type and check your answer."
@@ -190,6 +191,7 @@ export default function Home() {
       URL.revokeObjectURL(currentAudioUrl.current);
       currentAudioUrl.current = null;
     }
+    answeredRef.current = false;
     setAnswer("");
     setDiffWords(null);
     setFeedback(null);
@@ -226,14 +228,15 @@ export default function Home() {
   const handleReplay = useCallback(() => {
     if (!customer || (appState !== "waiting" && appState !== "revealed")) return;
     if (currentAudioUrl.current) {
-      playAudioUrl(currentAudioUrl.current, customer.name);
+      playAudioUrl(currentAudioUrl.current, customer.name, appState);
     } else {
-      playAudio(customer.orderText, customer);
+      playAudio(customer.orderText, customer, appState);
     }
   }, [customer, appState, playAudioUrl, playAudio]);
 
   const handleCheck = useCallback(async () => {
-    if (!customer || appState !== "waiting") return;
+    if (!customer || appState !== "waiting" || answeredRef.current) return;
+    answeredRef.current = true;
     const trimmed = answer.trim();
     if (!trimmed) return;
 
@@ -276,7 +279,8 @@ export default function Home() {
   }, [customer, appState, answer]);
 
   const handleReveal = useCallback(async () => {
-    if (!customer || appState !== "waiting") return;
+    if (!customer || appState !== "waiting" || answeredRef.current) return;
+    answeredRef.current = true;
     const diff = buildDiff(null, customer.canonicalOrder);
     setDiffWords(diff);
     setAppState("revealed");
