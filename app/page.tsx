@@ -83,6 +83,8 @@ export default function Home() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const currentAudioUrl = useRef<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const candidateRef = useRef<{ customer: CustomerProfile; audioUrl: string } | null>(null);
+  const isPrefetchingRef = useRef(false);
 
   useEffect(() => {
     fetch("/api/performance")
@@ -128,6 +130,30 @@ export default function Home() {
     []
   );
 
+  const prefetchCandidate = useCallback(async () => {
+    if (isPrefetchingRef.current || candidateRef.current) return;
+    isPrefetchingRef.current = true;
+    try {
+      const custRes = await fetch("/api/customer");
+      if (!custRes.ok) throw new Error();
+      const cust: CustomerProfile = await custRes.json();
+
+      const ttsRes = await fetch("/api/tts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text: cust.orderText }),
+      });
+      if (!ttsRes.ok) throw new Error();
+      const blob = await ttsRes.blob();
+      const url = URL.createObjectURL(blob);
+      candidateRef.current = { customer: cust, audioUrl: url };
+    } catch {
+      // 静默失败，点击时回退到实时获取
+    } finally {
+      isPrefetchingRef.current = false;
+    }
+  }, []);
+
   const playAudio = useCallback(
     async (orderText: string, cust: CustomerProfile) => {
       try {
@@ -142,6 +168,7 @@ export default function Home() {
         const url = URL.createObjectURL(blob);
         currentAudioUrl.current = url;
         await playAudioUrl(url, cust.name);
+        prefetchCandidate();
       } catch (err) {
         console.error(err);
         setAppState("waiting");
@@ -151,7 +178,7 @@ export default function Home() {
         );
       }
     },
-    [playAudioUrl]
+    [playAudioUrl, prefetchCandidate]
   );
 
   const handleNewCustomer = useCallback(async () => {
@@ -163,26 +190,38 @@ export default function Home() {
       URL.revokeObjectURL(currentAudioUrl.current);
       currentAudioUrl.current = null;
     }
-    setAppState("loading");
-    setLoadingMsg("Generating customer...");
     setAnswer("");
     setDiffWords(null);
     setFeedback(null);
     setAudioError("");
 
-    try {
-      const res = await fetch("/api/customer");
-      if (!res.ok) throw new Error("Customer API error");
-      const cust: CustomerProfile = await res.json();
-      setCustomer(cust);
-      await playAudio(cust.orderText, cust);
-    } catch (err) {
-      console.error(err);
-      setAppState("idle");
-      setLoadingMsg("");
-      setAudioError("Failed to generate customer. Please try again.");
+    const candidate = candidateRef.current;
+    candidateRef.current = null;
+
+    if (candidate) {
+      setAppState("loading");
+      setCustomer(candidate.customer);
+      currentAudioUrl.current = candidate.audioUrl;
+      await playAudioUrl(candidate.audioUrl, candidate.customer.name);
+    } else {
+      setAppState("loading");
+      setLoadingMsg("Generating customer...");
+      try {
+        const res = await fetch("/api/customer");
+        if (!res.ok) throw new Error("Customer API error");
+        const cust: CustomerProfile = await res.json();
+        setCustomer(cust);
+        await playAudio(cust.orderText, cust);
+      } catch (err) {
+        console.error(err);
+        setAppState("idle");
+        setLoadingMsg("");
+        setAudioError("Failed to generate customer. Please try again.");
+      }
     }
-  }, [playAudio]);
+
+    prefetchCandidate();
+  }, [playAudio, playAudioUrl, prefetchCandidate]);
 
   const handleReplay = useCallback(() => {
     if (!customer || (appState !== "waiting" && appState !== "revealed")) return;
