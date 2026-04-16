@@ -141,7 +141,7 @@ export default function Home() {
       const ttsRes = await fetch("/api/tts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text: cust.orderText }),
+        body: JSON.stringify({ text: cust.orderText, gender: cust.gender }),
       });
       if (!ttsRes.ok) throw new Error();
       const blob = await ttsRes.blob();
@@ -160,7 +160,7 @@ export default function Home() {
         const res = await fetch("/api/tts", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ text: orderText }),
+          body: JSON.stringify({ text: orderText, gender: cust.gender }),
         });
         if (!res.ok) throw new Error("TTS API error");
 

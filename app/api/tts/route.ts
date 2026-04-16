@@ -3,11 +3,11 @@ import { generateTTS } from "@/lib/gemini";
 
 export async function POST(req: NextRequest) {
   try {
-    const { text } = await req.json();
+    const { text, gender } = await req.json();
     if (!text) {
       return NextResponse.json({ error: "text is required" }, { status: 400 });
     }
-    const audioBuffer = await generateTTS(text as string);
+    const audioBuffer = await generateTTS(text as string, gender as string);
     const bytes = new Uint8Array(audioBuffer);
     return new NextResponse(bytes, {
       status: 200,

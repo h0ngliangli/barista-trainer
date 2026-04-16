@@ -72,7 +72,8 @@ function pcmToWav(pcm: Buffer, sampleRate = 24000, channels = 1, bitsPerSample =
   return Buffer.concat([header, pcm]);
 }
 
-export async function generateTTS(text: string): Promise<Buffer> {
+export async function generateTTS(text: string, gender: string = "female"): Promise<Buffer> {
+  const voiceName = gender === "male" ? "Charon" : "Aoede";
   const response = await genai.models.generateContent({
     model: "gemini-2.5-flash-preview-tts",
     contents: [{ role: "user", parts: [{ text }] }],
@@ -80,7 +81,7 @@ export async function generateTTS(text: string): Promise<Buffer> {
       responseModalities: ["AUDIO"],
       speechConfig: {
         voiceConfig: {
-          prebuiltVoiceConfig: { voiceName: "Aoede" },
+          prebuiltVoiceConfig: { voiceName },
         },
       },
     },

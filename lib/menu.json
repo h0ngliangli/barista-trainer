@@ -1,0 +1,2093 @@
+[
+  {
+    "name": "Iced Ube Coconut Cream Shaken Espresso",
+    "category": "Cold Coffee",
+    "calories": 250,
+    "options": {
+      "size": [
+        { "name": "Tall", "volume_fl_oz": 12 },
+        { "name": "Grande", "volume_fl_oz": 16 },
+        { "name": "Venti", "volume_fl_oz": 24 }
+      ],
+      "flavors": {
+        "Toasted Coconut Syrup": {
+          "default_pumps": 2,
+          "customizable": true
+        }
+      },
+      "cold_foam": ["Ube Coconut Cream Cold Foam"],
+      "milk": ["Oatmilk"],
+      "espresso": {
+        "default_shots": 3,
+        "options": ["Blonde Espresso"]
+      }
+    }
+  },
+
+  {
+    "name": "Cold Brew",
+    "sizes": [
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 24 fl oz",
+      "Trenta 30 fl oz"
+    ],
+    "whats_included": {
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Toasted Coconut Cream Cold Brew",
+    "sizes": [
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 24 fl oz",
+      "Trenta 30 fl oz"
+    ],
+    "whats_included": {
+      "flavors_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 2
+      },
+      "toppings": {
+        "type": "select",
+        "default": "Toasted Coconut Flakes",
+        "options": [
+          "Toasted Coconut Flakes",
+          "Extra Toasted Coconut Flakes",
+          "Light Toasted Coconut Flakes",
+          "No Toasted Coconut Flakes"
+        ]
+      },
+      "cold_foams": {
+        "type": "select",
+        "default": "Toasted Coconut Cream Cold Foam",
+        "options": [
+          "Extra Toasted Coconut Cream Cold Foam",
+          "Light Toasted Coconut Cream Cold Foam",
+          "No Toasted Coconut Cream Cold Foam",
+          "Toasted Coconut Cream Cold Foam"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Pistachio Cream Cold Brew",
+    "sizes": [
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 24 fl oz",
+      "Trenta 30 fl oz"
+    ],
+    "whats_included": {
+      "flavors_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 2
+      },
+      "toppings": {
+        "type": "select",
+        "default": "Salted Brown-Buttery Topping",
+        "options": [
+          "Extra Salted Brown Butter Topping",
+          "Light Salted Brown-Buttery Topping",
+          "No Salted Brown-Buttery Topping",
+          "Salted Brown-Buttery Topping"
+        ]
+      },
+      "cold_foams": {
+        "type": "select",
+        "default": "Pistachio Cream Cold Foam",
+        "options": [
+          "No Pistachio Cream Cold Foam",
+          "Light Pistachio Cream Cold Foam",
+          "Pistachio Cream Cold Foam",
+          "Extra Pistachio Cream Cold Foam"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Vanilla Sweet Cream Cold Brew",
+    "sizes": [
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 24 fl oz",
+      "Trenta 30 fl oz"
+    ],
+    "whats_included": {
+      "flavors_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 2
+      },
+      "splash_of_vanilla_sweet_cream": {
+        "type": "select",
+        "default": "1/2 Inch Splash of Vanilla Sweet Cream",
+        "options": [
+          "3/4 Inch Splash of Vanilla Sweet Cream",
+          "1/4 Inch Splash of Vanilla Sweet Cream",
+          "No Splash of Vanilla Sweet Cream",
+          "1/2 Inch Splash of Vanilla Sweet Cream"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Salted Caramel Cream Cold Brew",
+    "sizes": [
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 24 fl oz",
+      "Trenta 30 fl oz"
+    ],
+    "whats_included": {
+      "flavors_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 2
+      },
+      "cold_foams": {
+        "type": "select",
+        "default": "Salted Caramel Cream Cold Foam",
+        "options": [
+          "No Salted Caramel Cream Cold Foam",
+          "Light Salted Caramel Cream Cold Foam",
+          "Salted Caramel Cream Cold Foam",
+          "Extra Salted Caramel Cream Cold Foam"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Chocolate Cream Cold Brew",
+    "sizes": [
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 24 fl oz",
+      "Trenta 30 fl oz"
+    ],
+    "whats_included": {
+      "flavors_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 2
+      },
+      "cold_foams": {
+        "type": "select",
+        "default": "Chocolate Cream Cold Foam",
+        "options": [
+          "No Chocolate Cream Cold Foam",
+          "Light Chocolate Cream Cold Foam",
+          "Chocolate Cream Cold Foam",
+          "Extra Chocolate Cream Cold Foam"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Nondairy Vanilla Sweet Cream Cold Brew",
+    "sizes": [
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 24 fl oz",
+      "Trenta 30 fl oz"
+    ],
+    "whats_included": {
+      "flavors_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 2
+      },
+      "splash_of_nondairy_vanilla_sweet_cream": {
+        "type": "select",
+        "default": "1/2 Inch Splash of Nondairy Vanilla Sweet Cream",
+        "options": [
+          "No Splash of Nondairy Vanilla Sweet Cream",
+          "1/4 Inch Splash of Nondairy Vanilla Sweet Cream",
+          "1/2 Inch Splash of Nondairy Vanilla Sweet Cream",
+          "3/4 Inch Splash of Nondairy Vanilla Sweet Cream"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Nondairy Salted Caramel Cream Cold Brew",
+    "sizes": [
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 24 fl oz",
+      "Trenta 30 fl oz"
+    ],
+    "whats_included": {
+      "flavors_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 2
+      },
+      "cold_foams": {
+        "type": "select",
+        "default": "Nondairy Salted Caramel Cream Cold Foam",
+        "options": [
+          "No Nondairy Salted Caramel Cream Cold Foam",
+          "Light Nondairy Salted Caramel Cream Cold Foam",
+          "Nondairy Salted Caramel Cream Cold Foam",
+          "Extra Nondairy Salted Caramel Cream Cold Foam"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Cold Brew with Nondairy Vanilla Sweet Cream Cold Foam",
+    "sizes": [
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 24 fl oz",
+      "Trenta 30 fl oz"
+    ],
+    "whats_included": {
+      "flavors_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 2
+      },
+      "cold_foams": {
+        "type": "select",
+        "default": "Nondairy Vanilla Sweet Cream Cold Foam",
+        "options": [
+          "No Nondairy Vanilla Sweet Cream Cold Foam",
+          "Light Nondairy Vanilla Sweet Cream Cold Foam",
+          "Nondairy Vanilla Sweet Cream Cold Foam",
+          "Extra Nondairy Vanilla Sweet Cream Cold Foam"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Nondairy Chocolate Cream Cold Brew",
+    "sizes": [
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 24 fl oz",
+      "Trenta 30 fl oz"
+    ],
+    "whats_included": {
+      "flavors_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 2
+      },
+      "cold_foams": {
+        "type": "select",
+        "default": "Nondairy Chocolate Cream Cold Foam",
+        "options": [
+          "No Nondairy Chocolate Cream Cold Foam",
+          "Light Nondairy Chocolate Cream Cold Foam",
+          "Nondairy Chocolate Cream Cold Foam",
+          "Extra Nondairy Chocolate Cream Cold Foam"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Nitro Cold Brew",
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz"],
+    "whats_included": {}
+  },
+  {
+    "name": "Vanilla Sweet Cream Nitro Cold Brew",
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz"],
+    "whats_included": {
+      "splash_of_vanilla_sweet_cream": {
+        "type": "select",
+        "default": "1/2 Inch Splash of Vanilla Sweet Cream",
+        "options": [
+          "3/4 Inch Splash of Vanilla Sweet Cream",
+          "1/4 Inch Splash of Vanilla Sweet Cream",
+          "No Splash of Vanilla Sweet Cream",
+          "1/2 Inch Splash of Vanilla Sweet Cream"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Blonde Roast - Starbucks® Sunsera",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {}
+  },
+  {
+    "name": "Medium Roast - Pike Place® Roast",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {}
+  },
+  {
+    "name": "Featured Dark Roast - Starbucks 1971 Roast™",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {}
+  },
+  {
+    "name": "Starbucks® Sun-Dried Ethiopia Highlands",
+    "sizes": ["Short", "Tall", "Grande", "Venti"],
+    "whats_included": {}
+  },
+  {
+    "name": "Decaf Roast - Pike Place® Roast",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {}
+  },
+  {
+    "name": "Caffè Misto",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      }
+    }
+  },
+  {
+    "name": "Caffè Americano",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 3
+      }
+    }
+  },
+  {
+    "name": "Caffè Latte",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Lavender Latte",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_lavender_powder_scoops": {
+        "type": "quantity",
+        "default": 3
+      },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Blonde Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Toasted Coconut Latte",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_toasted_coconut_syrup_pumps": {
+        "type": "quantity",
+        "default": 4
+      },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Pistachio Latte",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_pistachio_sauce": {
+        "type": "quantity",
+        "default": 4
+      },
+      "toppings_salted_brown_buttery": {
+        "type": "select",
+        "default": "Salted Brown-Buttery Topping",
+        "options": [
+          "Extra Salted Brown Butter Topping",
+          "Light Salted Brown-Buttery Topping",
+          "No Salted Brown-Buttery Topping",
+          "Salted Brown-Buttery Topping"
+        ]
+      },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Vanilla Protein Latte",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 4
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Sugar-Free Vanilla Protein Latte",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_sugar_free_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 4
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Caramel Protein Latte",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_caramel_syrup_pumps": {
+        "type": "quantity",
+        "default": 4
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Cinnamon Dolce Latte",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_cinnamon_dolce_syrup_pumps": {
+        "type": "quantity",
+        "default": 4
+      },
+      "toppings_whipped_cream": {
+        "type": "select",
+        "default": "Whipped Cream",
+        "options": [
+          "Whipped Cream",
+          "Extra Whipped Cream",
+          "Light Whipped Cream",
+          "No Whipped Cream"
+        ]
+      },
+      "toppings_cinnamon_dolce_sprinkles": {
+        "type": "select",
+        "default": "Cinnamon Dolce Sprinkles",
+        "options": [
+          "Cinnamon Dolce Sprinkles",
+          "Extra Cinnamon Dolce Sprinkles",
+          "Light Cinnamon Dolce Sprinkles",
+          "No Cinnamon Dolce Sprinkles"
+        ]
+      },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Sugar-Free Caramel Protein Latte",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_sugar_free_caramel_syrup_pumps": {
+        "type": "quantity",
+        "default": 4
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Starbucks® Blonde Vanilla Latte",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 4
+      },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Blonde Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Cappuccino",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Caffè Mocha",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_mocha_sauce": {
+        "type": "quantity",
+        "default": 4
+      },
+      "toppings_whipped_cream": {
+        "type": "select",
+        "default": "Whipped Cream",
+        "options": [
+          "Whipped Cream",
+          "Extra Whipped Cream",
+          "Light Whipped Cream",
+          "No Whipped Cream"
+        ]
+      },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "White Chocolate Mocha",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_white_chocolate_mocha_sauce": {
+        "type": "quantity",
+        "default": 4
+      },
+      "toppings_whipped_cream": {
+        "type": "select",
+        "default": "Whipped Cream",
+        "options": [
+          "Whipped Cream",
+          "Extra Whipped Cream",
+          "Light Whipped Cream",
+          "No Whipped Cream"
+        ]
+      },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Espresso Macchiato",
+    "sizes": [],
+    "whats_included": {
+      "size": {
+        "type": "select",
+        "default": "Doppio 1.6 fl oz",
+        "options": [
+          "Solo 0.8 fl oz",
+          "Doppio 1.6 fl oz",
+          "Triple 2.3 fl oz",
+          "Quad 3.1 fl oz"
+        ]
+      },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": ["2% Milk"]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Caramel Macchiato",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 3
+      },
+      "toppings_caramel_drizzle": {
+        "type": "select",
+        "default": "Caramel Drizzle",
+        "options": [
+          "Caramel Drizzle",
+          "No Caramel Drizzle",
+          "Light Caramel Drizzle",
+          "Extra Caramel Drizzle"
+        ]
+      },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Flat White",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "milk": {
+        "type": "select",
+        "default": "Whole Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      },
+      "shot_style": {
+        "type": "select",
+        "default": "Ristretto",
+        "options": ["Ristretto", "Long Shot"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Cortado",
+    "sizes": [],
+    "whats_included": {
+      "milk": {
+        "type": "select",
+        "default": "Whole Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Blonde Espresso",
+        "options": ["Blonde Espresso"]
+      },
+      "shot_style": {
+        "type": "select",
+        "default": "Ristretto",
+        "options": ["Ristretto"]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 3
+      }
+    }
+  },
+  {
+    "name": "Pistachio Cortado",
+    "sizes": [],
+    "whats_included": {
+      "flavors_pistachio_sauce": {
+        "type": "quantity",
+        "default": 2
+      },
+      "toppings_salted_brown_buttery": {
+        "type": "select",
+        "default": "Salted Brown-Buttery Topping",
+        "options": [
+          "Extra Salted Brown Butter Topping",
+          "Light Salted Brown-Buttery Topping",
+          "No Salted Brown-Buttery Topping",
+          "Salted Brown-Buttery Topping"
+        ]
+      },
+      "milk": {
+        "type": "select",
+        "default": "Whole Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      },
+      "shot_style": {
+        "type": "select",
+        "default": "Ristretto",
+        "options": ["Ristretto"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Blonde Espresso",
+        "options": ["Blonde Espresso"]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 3
+      }
+    }
+  },
+  {
+    "name": "Brown Sugar Oatmilk Cortado",
+    "sizes": [],
+    "whats_included": {
+      "flavors_brown_sugar_syrup_pumps": {
+        "type": "quantity",
+        "default": 2
+      },
+      "toppings_cinnamon_powder": {
+        "type": "select",
+        "default": "Cinnamon Powder",
+        "options": [
+          "Extra Cinnamon Powder",
+          "Light Cinnamon Powder",
+          "No Cinnamon Powder",
+          "Cinnamon Powder"
+        ]
+      },
+      "milk": {
+        "type": "select",
+        "default": "Oatmilk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Blonde Espresso",
+        "options": ["Blonde Espresso"]
+      },
+      "shot_style": {
+        "type": "select",
+        "default": "Ristretto",
+        "options": ["Ristretto"]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 3
+      }
+    }
+  },
+  {
+    "name": "Espresso",
+    "sizes": [],
+    "whats_included": {
+      "size": {
+        "type": "select",
+        "default": "Doppio 1.5 fl oz",
+        "options": [
+          "Solo 0.75 fl oz",
+          "Doppio 1.5 fl oz",
+          "Triple 2.25 fl oz",
+          "Quad 3 fl oz"
+        ]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Espresso Con Panna",
+    "sizes": [],
+    "whats_included": {
+      "size": {
+        "type": "select",
+        "default": "Doppio 1.5 fl oz",
+        "options": [
+          "Solo 0.75 fl oz",
+          "Doppio 1.5 fl oz",
+          "Triple 2.25 fl oz",
+          "Quad 3 fl oz"
+        ]
+      },
+      "toppings_whipped_cream": {
+        "type": "select",
+        "default": "Whipped Cream",
+        "options": [
+          "Whipped Cream",
+          "Extra Whipped Cream",
+          "Light Whipped Cream",
+          "No Whipped Cream"
+        ]
+      },
+      "espresso_roast": {
+        "type": "select",
+        "default": "Signature Espresso",
+        "options": [
+          "Blonde Espresso",
+          "Signature Espresso",
+          "1/2 Decaf",
+          "Decaf Espresso Roast",
+          "1/3 Decaf",
+          "2/3 Decaf"
+        ]
+      },
+      "shots": {
+        "type": "quantity",
+        "default": 2
+      }
+    }
+  },
+  {
+    "name": "Coffee Traveler – Pike Place® Roast",
+    "sizes": [],
+    "whats_included": {}
+  },
+  {
+    "name": "Coffee Traveler – Decaf Pike Place® Roast",
+    "sizes": [],
+    "whats_included": {}
+  },
+  {
+    "name": "Iced Matcha Latte",
+    "temperature": "iced",
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
+    "whats_included": {
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "sweeteners_classic_syrup_pumps": { "type": "quantity", "default": 3 },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Matcha Latte",
+    "temperature": "hot",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "sweeteners_classic_syrup_pumps": { "type": "quantity", "default": 3 },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      },
+      "temperature": {
+        "type": "select",
+        "default": "Steamed Hot",
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
+      }
+    }
+  },
+  {
+    "name": "Matcha Crème Frappuccino® Blended Beverage",
+    "temperature": "iced",
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
+    "whats_included": {
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "sweeteners_classic_syrup_pumps": { "type": "quantity", "default": 3 },
+      "toppings_whipped_cream": {
+        "type": "select",
+        "default": "Whipped Cream",
+        "options": [
+          "Whipped Cream",
+          "Extra Whipped Cream",
+          "Light Whipped Cream",
+          "No Whipped Cream"
+        ]
+      },
+      "milk": {
+        "type": "select",
+        "default": "Whole Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Iced Dubai Chocolate Matcha",
+    "temperature": "iced",
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
+    "whats_included": {
+      "flavors_pistachio_sauce": { "type": "quantity", "default": 3 },
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "toppings_salted_brown_buttery": {
+        "type": "select",
+        "default": "Salted Brown-Buttery Topping",
+        "options": [
+          "Extra Salted Brown Butter Topping",
+          "Light Salted Brown-Buttery Topping",
+          "No Salted Brown-Buttery Topping",
+          "Salted Brown-Buttery Topping"
+        ]
+      },
+      "cold_foam": {
+        "type": "select",
+        "default": "Chocolate Cream Cold Foam",
+        "options": [
+          "No Chocolate Cream Cold Foam",
+          "Light Chocolate Cream Cold Foam",
+          "Chocolate Cream Cold Foam",
+          "Extra Chocolate Cream Cold Foam"
+        ]
+      },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Iced Mango Cream Matcha",
+    "temperature": "iced",
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
+    "whats_included": {
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "sweeteners_classic_syrup_pumps": { "type": "quantity", "default": 3 },
+      "cold_foam": {
+        "type": "select",
+        "default": "Mango Cream Cold Foam",
+        "options": [
+          "Extra Mango Cream Cold Foam",
+          "Light Mango Cream Cold Foam",
+          "No Mango Cream Cold Foam",
+          "Mango Cream Cold Foam"
+        ]
+      },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Iced Lavender Cream Matcha",
+    "temperature": "iced",
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
+    "whats_included": {
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "sweeteners_classic_syrup_pumps": { "type": "quantity", "default": 3 },
+      "cold_foam": {
+        "type": "select",
+        "default": "Lavender Cream Cold Foam",
+        "options": [
+          "No Lavender Cream Cold Foam",
+          "Light Lavender Cream Cold Foam",
+          "Lavender Cream Cold Foam",
+          "Extra Lavender Cream Cold Foam"
+        ]
+      },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Iced Banana Bread Matcha",
+    "temperature": "iced",
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
+    "whats_included": {
+      "flavors_brown_sugar_syrup_pumps": { "type": "quantity", "default": 3 },
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "toppings_caramel_crunch": {
+        "type": "select",
+        "default": "Caramel Crunch Topping",
+        "options": [
+          "Caramel Crunch Topping",
+          "Extra Caramel Crunch Topping",
+          "Light Caramel Crunch Topping",
+          "No Caramel Crunch Topping"
+        ]
+      },
+      "cold_foam": {
+        "type": "select",
+        "default": "Banana Cream Cold Foam",
+        "options": [
+          "Extra Banana Cream Cold Foam",
+          "Light Banana Cream Cold Foam",
+          "No Banana Cream Cold Foam",
+          "Banana Cream Cold Foam"
+        ]
+      },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Iced Double Berry Matcha",
+    "temperature": "iced",
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
+    "whats_included": {
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "sweeteners_classic_syrup_pumps": { "type": "quantity", "default": 3 },
+      "cold_foam": {
+        "type": "select",
+        "default": "Raspberry Cream Cold Foam",
+        "options": [
+          "Extra Raspberry Cream Cold Foam",
+          "Light Raspberry Cream Cold Foam",
+          "No Raspberry Cream Cold Foam",
+          "Raspberry Cream Cold Foam"
+        ]
+      },
+      "milk": {
+        "type": "select",
+        "default": "2% Milk",
+        "options": [
+          "2% Milk",
+          "Almond",
+          "Coconut",
+          "Breve (Half & Half)",
+          "Heavy Cream",
+          "Nonfat Milk",
+          "Oatmilk",
+          "Protein-boosted Milk",
+          "Soy",
+          "Nondairy Vanilla Sweet Cream",
+          "Vanilla Sweet Cream",
+          "Whole Milk"
+        ]
+      },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      },
+      "add_ins_strawberry_puree": {
+        "type": "select",
+        "default": "Strawberry Purée",
+        "options": [
+          "Strawberry Purée",
+          "Extra Strawberry Purée",
+          "Light Strawberry Purée",
+          "No Strawberry Purée"
+        ]
+      }
+    }
+  },
+  {
+    "name": "Iced Protein Matcha",
+    "temperature": "iced",
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
+    "whats_included": {
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "sweeteners_classic_syrup_pumps": { "type": "quantity", "default": 3 },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Protein Matcha",
+    "temperature": "hot",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "sweeteners_classic_syrup_pumps": { "type": "quantity", "default": 3 },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      }
+    }
+  },
+  {
+    "name": "Iced Sugar-Free Vanilla Protein Matcha",
+    "temperature": "iced",
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
+    "whats_included": {
+      "flavors_sugar_free_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 3
+      },
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Sugar-Free Vanilla Protein Matcha",
+    "temperature": "hot",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_sugar_free_vanilla_syrup_pumps": {
+        "type": "quantity",
+        "default": 3
+      },
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      }
+    }
+  },
+  {
+    "name": "Iced Caramel Protein Matcha",
+    "temperature": "iced",
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
+    "whats_included": {
+      "flavors_caramel_syrup_pumps": { "type": "quantity", "default": 3 },
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Caramel Protein Matcha",
+    "temperature": "hot",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_caramel_syrup_pumps": { "type": "quantity", "default": 3 },
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      }
+    }
+  },
+  {
+    "name": "Iced Sugar-Free Caramel Protein Matcha",
+    "temperature": "iced",
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
+    "whats_included": {
+      "flavors_sugar_free_caramel_syrup_pumps": {
+        "type": "quantity",
+        "default": 3
+      },
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "add_ins_ice": {
+        "type": "select",
+        "default": "Ice",
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
+      }
+    }
+  },
+  {
+    "name": "Sugar-Free Caramel Protein Matcha",
+    "temperature": "hot",
+    "sizes": [
+      "Short 8 fl oz",
+      "Tall 12 fl oz",
+      "Grande 16 fl oz",
+      "Venti 20 fl oz"
+    ],
+    "whats_included": {
+      "flavors_sugar_free_caramel_syrup_pumps": {
+        "type": "quantity",
+        "default": 3
+      },
+      "tea_matcha_powder_scoops": { "type": "quantity", "default": 3 },
+      "foam": {
+        "type": "select",
+        "default": "Foam",
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
+      }
+    }
+  }
+]

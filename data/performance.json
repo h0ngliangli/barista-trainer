@@ -55,10 +55,122 @@
       "score": 0.8888888888888888,
       "correct": true,
       "timestamp": "2026-04-15T22:13:31.686Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Tall Flat White, extra hot, Butter Croissant",
+      "barristaInput": "Tall Flat White. Extra Hot. Butter Croissant",
+      "score": 1,
+      "correct": true,
+      "timestamp": "2026-04-16T14:58:49.189Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Tall Honey Oat Milk Latte, skinny, half sweet, Impossible Breakfast Sandwich",
+      "barristaInput": "a tall honey oamilk latte. skiny, half sweet. Impossible breakfast sandwich.",
+      "score": 0.8181818181818182,
+      "correct": false,
+      "timestamp": "2026-04-16T14:59:50.440Z"
+    },
+    {
+      "customerName": "Marcus",
+      "canonicalOrder": "Grande Caramel Macchiato, light ice, with almond milk, Butter Croissant",
+      "barristaInput": "Grande Caremel Macchiato. light ice. almond milk. butter croissant.",
+      "score": 0.9,
+      "correct": true,
+      "timestamp": "2026-04-16T15:01:33.400Z"
+    },
+    {
+      "customerName": "Olivia",
+      "canonicalOrder": "Grande Iced Matcha Latte, with oat milk, Impossible Breakfast Sandwich",
+      "barristaInput": "Grande Iced Motcha Latte. Oat milk. Impossible breakfast sandwich.",
+      "score": 0.9,
+      "correct": true,
+      "timestamp": "2026-04-16T15:02:56.159Z"
+    },
+    {
+      "customerName": "Ethan",
+      "canonicalOrder": "Venti Caramel Macchiato, extra hot, Everything Bagel with cream cheese",
+      "barristaInput": "Venty Caremel Macchiato. extra hot. Everything Bagel with cream cheese.",
+      "score": 1,
+      "correct": true,
+      "timestamp": "2026-04-16T15:03:51.266Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Tall Vanilla Latte with oat milk, Butter Croissant",
+      "barristaInput": "Tall vanilla Latte with oat milk. butter croissant.",
+      "score": 1,
+      "correct": true,
+      "timestamp": "2026-04-16T15:04:40.545Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Venti Iced White Chocolate Mocha with oat milk, Spinach Feta Egg Wrap",
+      "barristaInput": "Venti Iced chocolate Mocha. oat milk. spinach fedda egg wraps.",
+      "score": 0.75,
+      "correct": false,
+      "timestamp": "2026-04-16T15:05:25.604Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Venti Iced White Chocolate Mocha with oat milk, Spinach Feta Egg Wrap",
+      "barristaInput": "",
+      "score": 0,
+      "correct": false,
+      "timestamp": "2026-04-16T15:05:48.693Z"
+    },
+    {
+      "customerName": "Ethan",
+      "canonicalOrder": "Venti Caramel Macchiato, iced, with an extra shot, Double Smoked Bacon Cheddar Egg Sandwich",
+      "barristaInput": "Venti caremel Macchiato. Iced with an extra shot. double smoked bacon cheddar egg sandwich.",
+      "score": 1,
+      "correct": true,
+      "timestamp": "2026-04-16T15:07:13.274Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Venti Caramel Macchiato, extra caramel drizzle, with an extra shot, Butter Croissant",
+      "barristaInput": "Venti Caremel Macchiato. extra caremel. extra shot. butter croissant.",
+      "score": 0.8181818181818182,
+      "correct": false,
+      "timestamp": "2026-04-16T15:08:10.888Z"
+    },
+    {
+      "customerName": "Sarah",
+      "canonicalOrder": "Grande Americano, Double Smoked Bacon Cheddar Egg Sandwich",
+      "barristaInput": "granda americano, double smoked backon chaddar egg sandwich",
+      "score": 1,
+      "correct": true,
+      "timestamp": "2026-04-16T16:26:07.422Z"
+    },
+    {
+      "customerName": "Chloe",
+      "canonicalOrder": "Tall Iced Brown Sugar Oat Milk Shaken Espresso, light ice, Spinach Feta Egg Wrap",
+      "barristaInput": "tall iced brown sugar oat milk shaken espresso with light ice, spinatch egg wrap, heated.",
+      "score": 0.9285714285714286,
+      "correct": true,
+      "timestamp": "2026-04-16T16:27:28.873Z"
+    },
+    {
+      "customerName": "Olivia",
+      "canonicalOrder": "Tall Honey Oat Milk Latte, extra hot, Impossible Breakfast Sandwich",
+      "barristaInput": "tall honey oat milk latte, extra hot, impossible breakfast sandwich",
+      "score": 1,
+      "correct": true,
+      "timestamp": "2026-04-16T16:30:15.514Z"
+    },
+    {
+      "customerName": "Marcus",
+      "canonicalOrder": "Grande Americano, with an extra shot, Double Smoked Bacon Cheddar Egg Sandwich",
+      "barristaInput": "grande americano, extra shot, double smoked bacon chaddar egg sandwich",
+      "score": 0.9090909090909091,
+      "correct": true,
+      "timestamp": "2026-04-16T16:31:16.680Z"
     }
   ],
   "totals": {
-    "correct": 5,
-    "total": 7
+    "correct": 15,
+    "total": 21
   }
 }
