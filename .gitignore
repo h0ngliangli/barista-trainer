@@ -40,5 +40,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-data/performance.json
-data/performance.json
+/data/performance.json
+/data/**/*.wav

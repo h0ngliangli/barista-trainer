@@ -83,9 +83,10 @@ export default function Home() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const currentAudioUrl = useRef<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  const candidateRef = useRef<{ customer: CustomerProfile; audioUrl: string } | null>(null);
+  const candidateRef = useRef<{ customer: CustomerProfile; audioUrl: string; audioFilename: string } | null>(null);
   const isPrefetchingRef = useRef(false);
   const answeredRef = useRef(false);
+  const currentAudioFilenameRef = useRef<string>("");
 
   useEffect(() => {
     fetch("/api/performance")
@@ -142,12 +143,13 @@ export default function Home() {
       const ttsRes = await fetch("/api/tts", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ text: cust.orderText, gender: cust.gender }),
+        body: JSON.stringify({ text: cust.orderText, gender: cust.gender, customerName: cust.name }),
       });
       if (!ttsRes.ok) throw new Error();
+      const audioFilename = ttsRes.headers.get("X-Audio-Filename") ?? "";
       const blob = await ttsRes.blob();
       const url = URL.createObjectURL(blob);
-      candidateRef.current = { customer: cust, audioUrl: url };
+      candidateRef.current = { customer: cust, audioUrl: url, audioFilename };
     } catch {
       // 静默失败，点击时回退到实时获取
     } finally {
@@ -161,10 +163,11 @@ export default function Home() {
         const res = await fetch("/api/tts", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ text: orderText, gender: cust.gender }),
+          body: JSON.stringify({ text: orderText, gender: cust.gender, customerName: cust.name }),
         });
         if (!res.ok) throw new Error("TTS API error");
 
+        currentAudioFilenameRef.current = res.headers.get("X-Audio-Filename") ?? "";
         const blob = await res.blob();
         const url = URL.createObjectURL(blob);
         currentAudioUrl.current = url;
@@ -192,6 +195,7 @@ export default function Home() {
       currentAudioUrl.current = null;
     }
     answeredRef.current = false;
+    currentAudioFilenameRef.current = "";
     setAnswer("");
     setDiffWords(null);
     setFeedback(null);
@@ -204,6 +208,7 @@ export default function Home() {
       setAppState("loading");
       setCustomer(candidate.customer);
       currentAudioUrl.current = candidate.audioUrl;
+      currentAudioFilenameRef.current = candidate.audioFilename;
       await playAudioUrl(candidate.audioUrl, candidate.customer.name);
     } else {
       setAppState("loading");
@@ -270,6 +275,7 @@ export default function Home() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         customerName: customer.name,
+        audioFilename: currentAudioFilenameRef.current,
         orderText: customer.orderText,
         canonicalOrder: customer.canonicalOrder,
         barristaInput: trimmed,
@@ -296,6 +302,7 @@ export default function Home() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         customerName: customer.name,
+        audioFilename: currentAudioFilenameRef.current,
         orderText: customer.orderText,
         canonicalOrder: customer.canonicalOrder,
         barristaInput: "",
