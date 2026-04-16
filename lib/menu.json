@@ -2089,5 +2089,427 @@
         "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       }
     }
+  },
+  {
+    "category": "Breakfast Sandwiches",
+    "name": "Egg, Pesto & Mozzarella Sandwich",
+    "options": {
+      "Sandwich Options": ["Remove Cheese Slice"],
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Breakfast Sandwiches",
+    "name": "Bacon, Gouda & Egg Sandwich",
+    "options": {
+      "Sandwich Options": [
+        "Remove Cheese Slice",
+        "Remove Egg Patty",
+        "Remove Meat"
+      ],
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Breakfast Sandwiches",
+    "name": "Double-Smoked Bacon, Cheddar & Egg Sandwich",
+    "options": {
+      "Sandwich Options": [
+        "Remove Cheese Slice",
+        "Remove Egg Patty",
+        "Remove Meat"
+      ],
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Breakfast Sandwiches",
+    "name": "Sausage, Cheddar & Egg Sandwich",
+    "options": {
+      "Sandwich Options": [
+        "Remove Cheese Slice",
+        "Remove Egg Patty",
+        "Remove Meat"
+      ],
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Breakfast Sandwiches",
+    "name": "Turkey Bacon, Cheddar & Egg White Sandwich",
+    "options": {
+      "Sandwich Options": [
+        "Remove Cheese Slice",
+        "Remove Egg Patty",
+        "Remove Meat"
+      ],
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Breakfast Sandwiches",
+    "name": "Impossible™ Breakfast Sandwich",
+    "options": {
+      "Sandwich Options": [
+        "Remove Cheese Slice",
+        "Remove Egg Patty",
+        "Remove Meat"
+      ],
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Breakfast Sandwiches",
+    "name": "Avocado Spread",
+    "options": {}
+  },
+  {
+    "category": "Breakfast Wraps",
+    "name": "Bacon, Sausage & Egg Wrap",
+    "options": {
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Breakfast Wraps",
+    "name": "Spinach, Feta & Egg White Wrap",
+    "options": {
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Egg Bites & Bakes",
+    "name": "Truffle, Mushroom & Brie Egg Bites",
+    "options": {
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Egg Bites & Bakes",
+    "name": "Italian Sausage Egg Bites",
+    "options": {
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Egg Bites & Bakes",
+    "name": "Bacon & Gruyère Egg Bites",
+    "options": {
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Egg Bites & Bakes",
+    "name": "Egg White & Roasted Red Pepper Egg Bites",
+    "options": {
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Egg Bites & Bakes",
+    "name": "Potato, Cheddar & Chive Bakes",
+    "options": {
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Egg Bites & Bakes",
+    "name": "Avocado Spread",
+    "options": {}
+  },
+  {
+    "category": "More Breakfast Classics",
+    "name": "Rolled & Steel-Cut Oatmeal",
+    "options": {
+      "Oatmeal Toppings": [
+        "Nut Medley",
+        "Agave Syrup",
+        "Blueberries",
+        "Brown Sugar",
+        "Dried Fruit"
+      ],
+      "Preparation - Add Milk Instead of Water": [
+        "None",
+        "No water - Prepared with 2% Milk",
+        "No water - Prepared with Almondmilk",
+        "No water - Prepared with Coconutmilk",
+        "No water - Prepared with Cream (Half & Half)",
+        "No water - Prepared with Heavy Cream",
+        "No water - Prepared with Nonfat Milk",
+        "No water - Prepared with Oatmilk",
+        "No water - Prepared with Soymilk",
+        "No water - Prepared with Nondairy Vanilla Sweet Cream",
+        "No water - Prepared with Vanilla Sweet Cream",
+        "No water - Prepared with Whole Milk"
+      ],
+      "Milk - Add Milk on Top": [
+        "1/4 inch 2% Milk on Top",
+        "1/4 inch Almondmilk on Top",
+        "1/4 inch Coconutmilk on Top",
+        "1/4 inch Cream (Half & Half) on Top",
+        "1/4 inch Heavy Cream on Top",
+        "1/4 inch Nonfat Milk on Top",
+        "1/4 inch Oatmilk on Top",
+        "1/4 inch Nondairy Vanilla Sweet Cream on Top",
+        "1/4 inch Soymilk on Top",
+        "1/4 inch Vanilla Sweet Cream on Top",
+        "1/4 inch Whole Milk on Top"
+      ],
+      "Milk - Add Milk Temperature": [
+        "None",
+        "Warm",
+        "Steamed Hot",
+        "Extra Hot"
+      ],
+      "Sweeteners - Add Liquid Sweeteners": [
+        "Classic Syrup",
+        "Honey Blend Syrup"
+      ],
+      "Sweeteners - Add Sweetener Packets": [
+        "Honey",
+        "Sugar In The Raw®",
+        "Splenda®",
+        "Stevia in the Raw®",
+        "Sugar"
+      ]
+    }
+  },
+  {
+    "category": "More Breakfast Classics",
+    "name": "MUSH Chocolate Peanut Butter Protein Overnight Oats",
+    "options": {}
+  },
+  {
+    "category": "More Breakfast Classics",
+    "name": "Ellenos® Muesli Yogurt – No Added Sugar",
+    "options": {}
+  },
+  {
+    "category": "More Breakfast Classics",
+    "name": "Ellenos Strawberry Shortcake Greek Yogurt",
+    "options": {}
+  },
+  {
+    "category": "More Breakfast Classics",
+    "name": "Ellenos Muesli Yogurt",
+    "options": {}
+  },
+  {
+    "category": "Croissants & Danishes",
+    "name": "Cookie Croissant Swirl",
+    "options": {}
+  },
+  {
+    "category": "Croissants & Danishes",
+    "name": "Yuzu Citrus Blossom",
+    "options": {
+      "Warming": ["Warmed"]
+    }
+  },
+  {
+    "category": "Croissants & Danishes",
+    "name": "Cinnamon Pull-Apart",
+    "options": {}
+  },
+  {
+    "category": "Croissants & Danishes",
+    "name": "Cheese Danish",
+    "options": {
+      "Warming": ["Warmed"]
+    }
+  },
+  {
+    "category": "Croissants & Danishes",
+    "name": "Ham & Swiss Croissant",
+    "options": {}
+  },
+  {
+    "category": "Croissants & Danishes",
+    "name": "Butter Croissant",
+    "options": {
+      "Butter & Spreads": ["Butter", "Plain Cream Cheese"],
+      "Warming": ["Warmed"]
+    }
+  },
+  {
+    "category": "Croissants & Danishes",
+    "name": "Chocolate Croissant",
+    "options": {
+      "Warming": ["Warmed"]
+    }
+  },
+  {
+    "category": "Loaves, Muffins, & Cakes",
+    "name": "Chocolate Pistachio Loaf",
+    "options": {
+      "Warming": ["Warmed", "Not Warmed"]
+    }
+  },
+  {
+    "category": "Loaves, Muffins, & Cakes",
+    "name": "Strawberry Matcha Loaf",
+    "options": {}
+  },
+  {
+    "category": "Loaves, Muffins, & Cakes",
+    "name": "Banana, Walnut & Pecan Loaf",
+    "options": {
+      "Warming": ["Warmed", "Not Warmed"]
+    }
+  },
+  {
+    "category": "Loaves, Muffins, & Cakes",
+    "name": "Iced Lemon Loaf",
+    "options": {}
+  },
+  {
+    "category": "Loaves, Muffins, & Cakes",
+    "name": "Pumpkin & Pepita Loaf",
+    "options": {
+      "Warming": ["Warmed", "Not Warmed"]
+    }
+  },
+  {
+    "category": "Loaves, Muffins, & Cakes",
+    "name": "Cinnamon Coffee Cake",
+    "options": {
+      "Warming": ["Warmed", "Not Warmed"]
+    }
+  },
+  {
+    "category": "Loaves, Muffins, & Cakes",
+    "name": "Blueberry Streusel Muffin",
+    "options": {
+      "Warming": ["Warmed"]
+    }
+  },
+  {
+    "category": "Loaves, Muffins, & Cakes",
+    "name": "Petite Vanilla Bean Scone",
+    "options": {}
+  },
+  {
+    "category": "Bagels",
+    "name": "Plain Bagel",
+    "options": {
+      "Butter & Spreads": ["Butter", "Plain Cream Cheese"],
+      "Warming": ["Warmed", "Not Warmed"]
+    }
+  },
+  {
+    "category": "Bagels",
+    "name": "Everything Bagel",
+    "options": {
+      "Butter & Spreads": ["Butter", "Plain Cream Cheese"],
+      "Warming": ["Warmed", "Not Warmed"]
+    }
+  },
+  {
+    "category": "Bagels",
+    "name": "Avocado Spread",
+    "options": {}
+  },
+  {
+    "category": "Cake Pops",
+    "name": "Frog Cake Pop",
+    "options": {}
+  },
+  {
+    "category": "Cake Pops",
+    "name": "Birthday Cake Pop",
+    "options": {}
+  },
+  {
+    "category": "Cake Pops",
+    "name": "Chocolate Cake Pop",
+    "options": {}
+  },
+  {
+    "category": "Cookies, Brownies, & Bars",
+    "name": "Dubai Chocolate Bite",
+    "options": {
+      "Warming": ["Warmed"]
+    }
+  },
+  {
+    "category": "Cookies, Brownies, & Bars",
+    "name": "Berry Blondie",
+    "options": {
+      "Warming": ["Not Warmed"]
+    }
+  },
+  {
+    "category": "Cookies, Brownies, & Bars",
+    "name": "Chocolate Chip Cookie",
+    "options": {
+      "Warming": ["Warmed"]
+    }
+  },
+  {
+    "category": "Cookies, Brownies, & Bars",
+    "name": "Double Chocolate Brownie",
+    "options": {
+      "Warming": ["Warmed"]
+    }
+  },
+  {
+    "category": "Lunch Sandwiches",
+    "name": "Crispy Grilled Cheese on Sourdough",
+    "options": {
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Lunch Sandwiches",
+    "name": "Ham & Swiss on Baguette",
+    "options": {
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Lunch Sandwiches",
+    "name": "Tomato & Mozzarella on Focaccia",
+    "options": {
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Lunch Sandwiches",
+    "name": "Avocado Spread",
+    "options": {}
+  },
+  {
+    "category": "Pockets",
+    "name": "Spicy Falafel Pocket",
+    "options": {
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Pockets",
+    "name": "Jalapeño Chicken Pocket",
+    "options": {
+      "Condiments": ["Add Sriracha"]
+    }
+  },
+  {
+    "category": "Pockets",
+    "name": "Avocado Spread",
+    "options": {}
+  },
+  {
+    "category": "Protein Boxes",
+    "name": "Cheese Trio Protein Box",
+    "options": {}
+  },
+  {
+    "category": "Protein Boxes",
+    "name": "Eggs & Cheddar Protein Box",
+    "options": {}
+  },
+  {
+    "category": "Protein Boxes",
+    "name": "Cheese & Fruit Protein Box",
+    "options": {}
   }
 ]
