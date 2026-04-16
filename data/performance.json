@@ -247,10 +247,19 @@
       "score": 0.9,
       "correct": true,
       "timestamp": "2026-04-16T23:11:06.974Z"
+    },
+    {
+      "customerName": "Sarah",
+      "orderText": "Hi there! Um... okay, so I think I'll do a... oh, actually, you know what? Can I just get a Venti Caramel Macchiato? And could you do that with oat milk please? Oh, and also, a butter croissant. To go, please. Thanks!",
+      "canonicalOrder": "Venti Caramel Macchiato, with oat milk, Butter Croissant",
+      "barristaInput": "venti caramel macchiato wtih oat milk, butter croissant",
+      "score": 0.875,
+      "correct": true,
+      "timestamp": "2026-04-16T23:14:45.402Z"
     }
   ],
   "totals": {
-    "correct": 24,
-    "total": 31
+    "correct": 25,
+    "total": 32
   }
 }

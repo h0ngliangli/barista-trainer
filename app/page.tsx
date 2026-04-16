@@ -270,6 +270,7 @@ export default function Home() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         customerName: customer.name,
+        orderText: customer.orderText,
         canonicalOrder: customer.canonicalOrder,
         barristaInput: trimmed,
         score,
@@ -295,6 +296,7 @@ export default function Home() {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
         customerName: customer.name,
+        orderText: customer.orderText,
         canonicalOrder: customer.canonicalOrder,
         barristaInput: "",
         score: 0,
