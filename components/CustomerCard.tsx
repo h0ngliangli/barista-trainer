@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { CustomerProfile } from "@/lib/gemini";
 
 interface DiffWord {
@@ -86,6 +87,21 @@ export default function CustomerCard({ customer, diffWords, revealed }: Props) {
           </span>
         ))}
       </div>
+
+      {revealed && customer?.menuItemImages && customer.menuItemImages.length > 0 && (
+        <div className="flex flex-wrap gap-2 mt-3">
+          {customer.menuItemImages.map((src, i) => (
+            <Image
+              key={i}
+              src={src}
+              alt=""
+              width={256}
+              height={256}
+              className="object-cover rounded-lg border border-neutral-200"
+            />
+          ))}
+        </div>
+      )}
     </div>
   );
 }

@@ -3,6 +3,7 @@ import { readFileSync, writeFileSync } from "fs";
 import { randomUUID } from "crypto";
 import path from "path";
 import { generateCustomer } from "@/lib/gemini";
+import { getImageUrl } from "@/lib/menu"
 
 const PROFILE_PATH = path.join(process.cwd(), "data", "customer-profile.json");
 
@@ -20,9 +21,9 @@ function appendCustomerProfile(customer: object) {
 export async function GET() {
   try {
     const customer = await generateCustomer();
-    const customerWithId = { ...customer, id: randomUUID() };
-    appendCustomerProfile(customerWithId);
-    return NextResponse.json(customerWithId);
+    const customerWithIdAndImages = { ...customer, id: randomUUID(), menuItemImages: customer.menuItems.map((item) => getImageUrl(item)).filter((img): img is string => !!img) };
+    appendCustomerProfile(customerWithIdAndImages);
+    return NextResponse.json(customerWithIdAndImages);
   } catch (err) {
     console.error("Error generating customer:", err);
     return NextResponse.json(

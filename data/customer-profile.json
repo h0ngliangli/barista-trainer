@@ -274,6 +274,52 @@
       "id": "0babdbd8-7385-4f01-bb85-9941f011bae4",
       "timestamp": "2026-04-17T20:26:52.806Z",
       "audioFilename": "20260417_132701_638_Chloe.wav"
+    },
+    {
+      "name": "Sarah",
+      "age": "30s",
+      "gender": "female",
+      "region": "Pacific Northwest",
+      "personality": [
+        "a bit indecisive",
+        "health-conscious",
+        "friendly"
+      ],
+      "orderText": "Hi there! Um, I think I'll do a... what's that, the Sugar-Free Caramel Protein Latte? Yeah, that one. Can I get that, like, a Venti, please? And um, could you make it with oat milk? And, oh, actually, make it extra hot, please. And could I also get a butter croissant, warmed? Thanks!",
+      "canonicalOrder": "Venti Sugar-Free Caramel Protein Latte, with oat milk, extra hot, Warmed Butter Croissant",
+      "menuItems": [
+        "Sugar-Free Caramel Protein Latte",
+        "Butter Croissant"
+      ],
+      "id": "03d2ea74-d0bf-42b1-b6a3-d26492efe62d",
+      "menuItemImages": [
+        "/products/Sugar-Free Caramel Protein Latte.png",
+        "/products/Butter Croissant.png"
+      ],
+      "timestamp": "2026-04-17T21:04:36.237Z",
+      "audioFilename": "20260417_140453_317_Sarah.wav"
+    },
+    {
+      "name": "Eleanor",
+      "age": "elderly",
+      "gender": "female",
+      "region": "Florida",
+      "personality": [
+        "sweet",
+        "a bit forgetful",
+        "precise about her order"
+      ],
+      "orderText": "Oh, good morning, dear! How are you today? Now, what was I going to have... Oh, yes! I'll have one of your... Cold Brews, the, uh, the smaller one. Is that a Tall? Yes, a Tall. And, um, could I have that with, oh, what's it called... oat milk, please? Yes, oat milk. And just a little less ice than usual, if you wouldn't mind. Thank you so much, you're a dear.",
+      "canonicalOrder": "Tall Cold Brew with oat milk, light ice",
+      "menuItems": [
+        "Cold Brew"
+      ],
+      "id": "43629cba-54bf-4a0f-8872-a428abaed9cb",
+      "menuItemImages": [
+        "/products/Cold Brew.png"
+      ],
+      "timestamp": "2026-04-17T21:05:04.233Z",
+      "audioFilename": "20260417_140519_350_Eleanor.wav"
     }
   ]
 }

@@ -32,7 +32,13 @@ export function randomPickDrinkAndFood() {
   return { drink1, drink2, food1, food2 };
 }
 
+// get the image URL for a menu item, if it exists
 export function getImageUrl(itemName: string): string | undefined {
-  const item = menuItems.find((i) => i.name.toLowerCase() === itemName.toLowerCase());
-  return item?.image;
+  const item = menuItems.find(
+    (i) => i.name.toLowerCase() === itemName.toLowerCase(),
+  );
+  if (item?.image) {
+    return `/products/${item.image}`;
+  }
+  return undefined;
 }

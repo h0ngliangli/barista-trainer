@@ -13,6 +13,7 @@ export interface CustomerProfile {
   orderText: string;
   canonicalOrder: string; // clean item list for scoring
   menuItems: string[];
+  menuItemImages?: string[];
 }
 
 export async function generateCustomer(): Promise<CustomerProfile> {
