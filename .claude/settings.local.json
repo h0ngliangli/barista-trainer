@@ -4,7 +4,8 @@
       "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
       "Read(//home/lih/projects/**)",
       "Bash(npx create-next-app@latest barista-trainer-app --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
-      "Bash(pnpm tsc *)"
+      "Bash(pnpm tsc *)",
+      "Bash(node -e ' *)"
     ]
   }
 }

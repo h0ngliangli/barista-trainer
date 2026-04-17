@@ -27,6 +27,150 @@
       "orderText": "Okay, hi! Um, I need a Venti Caramel Macchiato, but make that iced please. And actually, could I get an extra shot in there? You know what, also a Sausage Cheddar Egg Sandwich. Gotta run, thanks!",
       "canonicalOrder": "Venti Caramel Macchiato, iced, with an extra shot, Sausage Cheddar Egg Sandwich",
       "timestamp": "2026-04-16T23:35:14.555Z"
+    },
+    {
+      "name": "Sarah",
+      "age": "30s",
+      "gender": "female",
+      "region": "New York",
+      "personality": [
+        "impatient",
+        "direct",
+        "knows what she wants"
+      ],
+      "orderText": "Okay, hi. Can I get a Venti Iced White Chocolate Mocha? Uh, yeah, with an extra shot. And then, I also need an Impossible Breakfast Sandwich. Yeah, that's everything. Thanks.",
+      "canonicalOrder": "Venti Iced White Chocolate Mocha, with an extra shot, Impossible Breakfast Sandwich",
+      "id": "fd4387fd-7ef1-4814-866d-c54fef1363ec",
+      "timestamp": "2026-04-17T04:39:01.955Z",
+      "audioFilename": "20260416_213909_061_Sarah.wav"
+    },
+    {
+      "name": "Sarah",
+      "age": "30s",
+      "gender": "female",
+      "region": "Midwest",
+      "personality": [
+        "indecisive",
+        "a little flustered",
+        "apologetic"
+      ],
+      "orderText": "Hi! Um... can I get a... let's see. A caramel macchiato? Yeah. And, um, could that be an iced one? Grande, please. Oh, and, actually, could I get it with almond milk instead of regular? And, uh, a butter croissant too, please. Sorry, I'm still waking up!",
+      "canonicalOrder": "Grande Iced Caramel Macchiato, with almond milk, Butter Croissant",
+      "id": "8b1b682c-5c6a-45bd-8762-079094caedff",
+      "timestamp": "2026-04-17T04:39:12.711Z",
+      "audioFilename": "20260416_213923_200_Sarah.wav"
+    },
+    {
+      "name": "Sarah",
+      "age": "30s",
+      "gender": "female",
+      "region": "Seattle",
+      "personality": [
+        "busy",
+        "polite",
+        "decisive"
+      ],
+      "orderText": "Hi there! Um, okay, I'm gonna do a Venti Cold Brew, please. And, actually, could I get that with light ice? Yeah. And then also a butter croissant. That's it. Thanks!",
+      "canonicalOrder": "Venti Cold Brew, light ice, Butter Croissant",
+      "id": "863af6a5-50f5-499d-b43e-3be445864fe3",
+      "timestamp": "2026-04-17T04:45:23.883Z",
+      "audioFilename": "20260416_214534_252_Sarah.wav"
+    },
+    {
+      "name": "Chloe",
+      "age": "30s",
+      "gender": "female",
+      "region": "California",
+      "personality": [
+        "busy",
+        "to the point",
+        "slightly impatient"
+      ],
+      "orderText": "Hi, can I get a Grande Iced Caramel Macchiato, and, um, just the Impossible Breakfast Sandwich, please. That's it.",
+      "canonicalOrder": "Grande Iced Caramel Macchiato, Impossible Breakfast Sandwich",
+      "id": "86c7a3cb-4f51-43f6-8d07-b692d95ba160",
+      "timestamp": "2026-04-17T04:46:23.041Z",
+      "audioFilename": "20260416_214628_222_Chloe.wav"
+    },
+    {
+      "name": "Sarah",
+      "age": "20s",
+      "gender": "female",
+      "region": "Pacific Northwest",
+      "personality": [
+        "a little indecisive",
+        "friendly",
+        "slightly rushed"
+      ],
+      "orderText": "Okay, um, hi! Can I get, let's see... a Venti Caramel Macchiato? Oh, actually, can that be iced? Yeah, iced. And could I get, like, extra caramel drizzle? And, um, one of those, like, flaky butter croissants, please? Thanks!",
+      "canonicalOrder": "Venti Iced Caramel Macchiato, extra caramel drizzle, Butter Croissant",
+      "id": "a631b2ba-6782-48f1-82ff-5a27477e2cb4",
+      "timestamp": "2026-04-17T04:46:34.706Z",
+      "audioFilename": "20260416_214644_571_Sarah.wav"
+    },
+    {
+      "name": "Sarah",
+      "age": "30s",
+      "gender": "female",
+      "region": "New York",
+      "personality": [
+        "rushed",
+        "direct",
+        "no-nonsense"
+      ],
+      "orderText": "Hi, yeah, um, can I just get a Grande Pike Place, extra hot? And then, uh, actually, can I also grab an Impossible Breakfast Sandwich? To go, please. Thanks.",
+      "canonicalOrder": "Grande Pike Place Roast, extra hot, Impossible Breakfast Sandwich",
+      "id": "8b6d1b7c-df46-430c-bba0-e57bafe86919",
+      "timestamp": "2026-04-17T04:47:07.780Z",
+      "audioFilename": "20260416_214714_122_Sarah.wav"
+    },
+    {
+      "name": "Sarah",
+      "age": "30s",
+      "gender": "female",
+      "region": "Seattle",
+      "personality": [
+        "a bit indecisive",
+        "friendly",
+        "health-conscious"
+      ],
+      "orderText": "Hi there! Um, okay, so, what am I in the mood for today... Hmm. I think I'll do a... you know what, let's do the Tall Iced Brown Sugar Oat Milk Shaken Espresso. Yeah, that one. And could I get that with, like, light ice, please? Oh, and actually, could I also get a Spinach Feta Egg Wrap? That's all. Thanks!",
+      "canonicalOrder": "Tall Iced Brown Sugar Oat Milk Shaken Espresso, light ice, Spinach Feta Egg Wrap",
+      "id": "4491c4b1-3cea-4496-a7dc-c3548fc03b45",
+      "timestamp": "2026-04-17T04:48:31.530Z",
+      "audioFilename": "20260416_214844_459_Sarah.wav"
+    },
+    {
+      "name": "Sarah",
+      "age": "30s",
+      "gender": "female",
+      "region": "California",
+      "personality": [
+        "indecisive",
+        "friendly",
+        "slightly flustered"
+      ],
+      "orderText": "Oh, hi! Good morning. Um, okay, so, let's see... what sounds good today? I think I'm gonna go with a... a Venti Caramel Macchiato, please. Oh, actually, wait, no, can I do that... um, iced? Yeah, iced. And can I get that with oat milk instead of regular milk? And, like, just a little bit less caramel drizzle on top, please. And then, uh, do you have any of the banana bread? The banana nut bread? Great! That's it, thank you!",
+      "canonicalOrder": "Venti Iced Caramel Macchiato, with oat milk, light extra caramel drizzle, Banana Nut Bread",
+      "id": "837ad39d-1a1f-4cab-8549-ff274d8b1efa",
+      "timestamp": "2026-04-17T04:48:53.450Z",
+      "audioFilename": "20260416_214913_238_Sarah.wav"
+    },
+    {
+      "name": "Sarah",
+      "age": "20s",
+      "gender": "female",
+      "region": "Seattle",
+      "personality": [
+        "a bit flustered",
+        "indecisive",
+        "polite"
+      ],
+      "orderText": "Oh, hey! Um... I'll do a... what was it? A tall Cinnamon Dolce Latte. Actually, can I get that with oat milk? And, um, could you do it half sweet, please? Yeah, half sweet. Oh! And a blueberry muffin too, if you have them. Thanks!",
+      "canonicalOrder": "Tall Cinnamon Dolce Latte, with oat milk, half sweet, Blueberry Muffin",
+      "id": "43b92555-5413-4993-a61b-e9f9182b3215",
+      "timestamp": "2026-04-17T04:50:03.231Z",
+      "audioFilename": "20260416_215015_386_Sarah.wav"
     }
   ]
 }
