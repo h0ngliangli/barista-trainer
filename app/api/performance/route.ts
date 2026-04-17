@@ -7,7 +7,6 @@ const DATA_PATH = path.join(process.cwd(), "data", "performance.json");
 interface SessionEntry {
   timestamp: string;
   customerName: string;
-  audioFilename?: string;
   orderText: string;
   canonicalOrder: string;
   barristaInput: string;

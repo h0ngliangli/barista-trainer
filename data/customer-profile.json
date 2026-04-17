@@ -1,0 +1,32 @@
+{
+  "customers": [
+    {
+      "name": "Sarah",
+      "age": "30s",
+      "gender": "female",
+      "region": "Seattle",
+      "personality": [
+        "rushed",
+        "apologetic",
+        "a little indecisive"
+      ],
+      "orderText": "Hi, um, can I get a... oh gosh, I'm so sorry, I'm really rushing today. Okay, a Tall Vanilla Latte, please. And actually, could I get that with oat milk? Yeah, oat milk. And then, uh, a Chocolate Croissant too, if you have those. Thanks!",
+      "canonicalOrder": "Tall Vanilla Latte, with oat milk, Chocolate Croissant",
+      "timestamp": "2026-04-16T23:35:00.949Z"
+    },
+    {
+      "name": "Sarah",
+      "age": "30s",
+      "gender": "female",
+      "region": "New York",
+      "personality": [
+        "stressed",
+        "fast talker",
+        "decisive"
+      ],
+      "orderText": "Okay, hi! Um, I need a Venti Caramel Macchiato, but make that iced please. And actually, could I get an extra shot in there? You know what, also a Sausage Cheddar Egg Sandwich. Gotta run, thanks!",
+      "canonicalOrder": "Venti Caramel Macchiato, iced, with an extra shot, Sausage Cheddar Egg Sandwich",
+      "timestamp": "2026-04-16T23:35:14.555Z"
+    }
+  ]
+}

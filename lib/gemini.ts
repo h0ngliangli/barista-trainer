@@ -4,6 +4,7 @@ import { MENU_SUMMARY } from "./menu";
 const genai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY! });
 
 export interface CustomerProfile {
+  id?: string;
   name: string;
   age: string;
   gender: string;

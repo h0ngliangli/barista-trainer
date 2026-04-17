@@ -1,7 +1,23 @@
 import { NextRequest, NextResponse } from "next/server";
-import { mkdirSync, writeFileSync } from "fs";
+import { mkdirSync, readFileSync, writeFileSync } from "fs";
 import path from "path";
 import { generateTTS } from "@/lib/gemini";
+
+const PROFILE_PATH = path.join(process.cwd(), "data", "customer-profile.json");
+
+function updateCustomerAudioFilename(customerId: string, audioFilename: string) {
+  let data: { customers: Record<string, unknown>[] } = { customers: [] };
+  try {
+    data = JSON.parse(readFileSync(PROFILE_PATH, "utf-8"));
+  } catch {
+    return;
+  }
+  const entry = data.customers.find((c) => c.id === customerId);
+  if (entry) {
+    entry.audioFilename = audioFilename;
+    writeFileSync(PROFILE_PATH, JSON.stringify(data, null, 2));
+  }
+}
 
 function generateFilename(customerName: string): string {
   const now = new Date();
@@ -21,7 +37,7 @@ function generateFilename(customerName: string): string {
 
 export async function POST(req: NextRequest) {
   try {
-    const { text, gender, customerName } = await req.json();
+    const { text, gender, customerName, customerId } = await req.json();
     if (!text) {
       return NextResponse.json({ error: "text is required" }, { status: 400 });
     }
@@ -32,6 +48,10 @@ export async function POST(req: NextRequest) {
     const audioDir = path.join(process.cwd(), "data", "audio");
     mkdirSync(audioDir, { recursive: true });
     writeFileSync(path.join(audioDir, filename), audioBuffer);
+
+    if (customerId) {
+      updateCustomerAudioFilename(customerId as string, filename);
+    }
 
     return new NextResponse(bytes, {
       status: 200,
