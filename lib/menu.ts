@@ -31,3 +31,8 @@ export function randomPickDrinkAndFood() {
   const food2 = food[Math.floor(Math.random() * food.length)];
   return { drink1, drink2, food1, food2 };
 }
+
+export function getImageUrl(itemName: string): string | undefined {
+  const item = menuItems.find((i) => i.name.toLowerCase() === itemName.toLowerCase());
+  return item?.image;
+}

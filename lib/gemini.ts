@@ -12,6 +12,7 @@ export interface CustomerProfile {
   personality: string[];
   orderText: string;
   canonicalOrder: string; // clean item list for scoring
+  menuItems: string[];
 }
 
 export async function generateCustomer(): Promise<CustomerProfile> {
@@ -33,7 +34,8 @@ Return a JSON object with EXACTLY these fields:
   "region": "US region or city, e.g. 'California', 'New York', 'Texas'",
   "personality": ["2-3 short trait tags, e.g. 'fast talker', 'very polite', 'mumbles'"],
   "orderText": "The customer's spoken order in natural conversational language. They may ramble, add filler words, change their mind mid-sentence, use slang, or be very precise — matching their personality. Must include at least one drink from the menu. May include food and modifiers.",
-  "canonicalOrder": "A clean, minimal summary of what they actually ordered, e.g. 'Grande Caramel Macchiato, no whip, Butter Croissant'"
+  "canonicalOrder": "A clean, minimal summary of what they actually ordered, e.g. 'Grande Caramel Macchiato, no whip, Butter Croissant'",
+  "menuItems": [The exact menu item names the customer ordered]
 }
 
 Important:

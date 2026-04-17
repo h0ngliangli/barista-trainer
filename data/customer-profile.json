@@ -203,6 +203,77 @@
       "id": "c42ebc3a-c99f-4ac0-ae60-d8a57017dd28",
       "timestamp": "2026-04-17T19:48:18.983Z",
       "audioFilename": "20260417_124834_226_Brenda.wav"
+    },
+    {
+      "name": "Sarah",
+      "age": "30s",
+      "gender": "female",
+      "region": "Pacific Northwest",
+      "personality": [
+        "health-conscious",
+        "a bit indecisive",
+        "polite"
+      ],
+      "orderText": "Hi there! Um, could I get an iced... Sun-Dried Ethiopia Highlands? Oh, and could you do that with oat milk? And a Grande, please. And then also... I think I'll grab one of those Ellenos Muesli yogurts, the no sugar one. Thanks!",
+      "canonicalOrder": "Grande Iced Sun-Dried Ethiopia Highlands with oat milk, Ellenos Muesli Yogurt – No Added Sugar",
+      "id": "4b465feb-561a-4583-8d00-defb28f661a1",
+      "timestamp": "2026-04-17T20:22:29.035Z",
+      "audioFilename": "20260417_132238_723_Sarah.wav"
+    },
+    {
+      "name": "Sarah",
+      "age": "30s",
+      "gender": "female",
+      "region": "California",
+      "personality": [
+        "friendly",
+        "a little rushed",
+        "specific"
+      ],
+      "orderText": "Hey! So, I'm gonna do the Iced Double Berry Matcha, uh, a Grande, please. And could I get that with oat milk? Yeah, oat milk. And, um, light ice, actually, if you can. Oh, and then I'll also grab one of those Bacon, Sausage & Egg Wraps. Thanks!",
+      "canonicalOrder": "Grande Iced Double Berry Matcha, with oat milk, light ice, Bacon, Sausage & Egg Wrap",
+      "id": "abe56271-2ffd-4663-9c2c-68b002a12f88",
+      "timestamp": "2026-04-17T20:22:43.365Z",
+      "audioFilename": "20260417_132253_349_Sarah.wav"
+    },
+    {
+      "name": "Liam",
+      "age": "30s",
+      "gender": "male",
+      "region": "Denver, Colorado",
+      "personality": [
+        "quick",
+        "direct",
+        "polite"
+      ],
+      "orderText": "Hey, I need a Venti Caramel Macchiato, extra hot, with oat milk please. And, uh, no caramel drizzle. Thanks!",
+      "canonicalOrder": "Venti Caramel Macchiato, extra hot, with oat milk, no caramel drizzle",
+      "menuItems": [
+        "Caramel Macchiato"
+      ],
+      "id": "e9909da1-419a-4e92-877f-61e43e8f83d0",
+      "timestamp": "2026-04-17T20:26:39.243Z",
+      "audioFilename": "20260417_132645_918_Liam.wav"
+    },
+    {
+      "name": "Chloe",
+      "age": "20s",
+      "gender": "female",
+      "region": "California",
+      "personality": [
+        "friendly",
+        "slightly indecisive",
+        "talkative"
+      ],
+      "orderText": "Hi there! Um, so I think I'll do a... a Grande Iced Double Berry Matcha, please. And could I get that with, like, oat milk? And also, maybe light ice, if that's okay? Oh, and also, I'll take an Everything Bagel, warmed with plain cream cheese. Thanks!",
+      "canonicalOrder": "Grande Iced Double Berry Matcha, with oat milk, light ice, Everything Bagel, warmed, with plain cream cheese",
+      "menuItems": [
+        "Iced Double Berry Matcha",
+        "Everything Bagel"
+      ],
+      "id": "0babdbd8-7385-4f01-bb85-9941f011bae4",
+      "timestamp": "2026-04-17T20:26:52.806Z",
+      "audioFilename": "20260417_132701_638_Chloe.wav"
     }
   ]
 }
