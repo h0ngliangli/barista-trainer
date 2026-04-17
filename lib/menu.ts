@@ -1,58 +1,7 @@
-export const DRINKS = [
-  // Hot espresso drinks
-  "Tall Vanilla Latte",
-  "Grande Caramel Macchiato",
-  "Venti Caramel Macchiato",
-  "Tall Flat White",
-  "Grande Cappuccino",
-  "Venti Chai Tea Latte",
-  "Grande Americano",
-  "Grande Pike Place Roast",
-  "Tall Blonde Roast",
-  "Tall Cinnamon Dolce Latte",
-  "Grande White Chocolate Mocha",
-  "Grande Peppermint Mocha",
-  "Tall Honey Oat Milk Latte",
-  // Cold / iced
-  "Grande Iced Caramel Macchiato",
-  "Venti Cold Brew",
-  "Grande Iced Matcha Latte",
-  "Venti Iced White Chocolate Mocha",
-  "Tall Iced Brown Sugar Oat Milk Shaken Espresso",
-  "Grande Toasted Vanilla Oat Milk Shaken Espresso",
-  "Tall Nitro Cold Brew",
-  // Frappuccinos
-  "Grande Mocha Frappuccino",
-  "Venti Green Tea Frappuccino",
-  "Grande Java Chip Frappuccino",
-  "Venti Caramel Ribbon Crunch Frappuccino",
-  // Refreshers & teas
-  "Venti Strawberry Acai Refresher",
-  "Tall Dragon Drink",
-  "Grande Pink Drink",
-  "Grande Teavana Shaken Iced Passion Tango Tea",
-  "Tall Pumpkin Spice Latte",
-];
+import menuItems from "./menu.json";
 
-export const FOOD = [
-  "Sausage Cheddar Egg Sandwich",
-  "Butter Croissant",
-  "Chocolate Croissant",
-  "Blueberry Muffin",
-  "Banana Nut Bread",
-  "Pumpkin Scone",
-  "Everything Bagel with cream cheese",
-  "Spinach Feta Egg Wrap",
-  "Double Smoked Bacon Cheddar Egg Sandwich",
-  "Ham and Swiss Panini",
-  "Turkey and Pesto Panini",
-  "Vanilla Bean Cake Pop",
-  "Chocolate Brownie",
-  "Lemon Loaf",
-  "Classic Coffee Cake",
-  "Impossible Breakfast Sandwich",
-  "Petite Vanilla Scone",
-];
+const drinks = menuItems.filter((item) => item.category === "drink");
+const food = menuItems.filter((item) => item.category === "food");
 
 export const MODIFIERS = [
   "with an extra shot",
@@ -74,8 +23,11 @@ export const MODIFIERS = [
   "extra foam",
 ];
 
-export const MENU_SUMMARY = `
-DRINKS: ${DRINKS.join(", ")}
-FOOD: ${FOOD.join(", ")}
-MODIFIERS: ${MODIFIERS.join(", ")}
-`;
+export function randomPickDrinkAndFood() {
+  // random pick 2 from drink and food
+  const drink1 = drinks[Math.floor(Math.random() * drinks.length)];
+  const drink2 = drinks[Math.floor(Math.random() * drinks.length)];
+  const food1 = food[Math.floor(Math.random() * food.length)];
+  const food2 = food[Math.floor(Math.random() * food.length)];
+  return { drink1, drink2, food1, food2 };
+}

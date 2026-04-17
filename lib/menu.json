@@ -448,7 +448,7 @@
     "image": "Vanilla Sweet Cream Nitro Cold Brew.png"
   },
   {
-    "name": "Blonde Roast - Starbucks® Sunsera",
+    "name": "Blonde Roast",
     "category": "drink",
     "sizes": [
       "Short 8 fl oz",
@@ -457,10 +457,10 @@
       "Venti 20 fl oz"
     ],
     "whats_included": {},
-    "image": "Blonde Roast - Starbucks® Sunsera.png"
+    "image": "Blonde Roast.png"
   },
   {
-    "name": "Medium Roast - Pike Place® Roast",
+    "name": "Medium Pike Place Roast",
     "category": "drink",
     "sizes": [
       "Short 8 fl oz",
@@ -469,10 +469,10 @@
       "Venti 20 fl oz"
     ],
     "whats_included": {},
-    "image": null
+    "image": "General Roast.png"
   },
   {
-    "name": "Featured Dark Roast - Starbucks 1971 Roast™",
+    "name": "Featured Dark Roast",
     "category": "drink",
     "sizes": [
       "Short 8 fl oz",
@@ -481,10 +481,10 @@
       "Venti 20 fl oz"
     ],
     "whats_included": {},
-    "image": null
+    "image": "General Roast.png"
   },
   {
-    "name": "Starbucks® Sun-Dried Ethiopia Highlands",
+    "name": "Sun-Dried Ethiopia Highlands",
     "category": "drink",
     "sizes": [
       "Short",
@@ -493,10 +493,10 @@
       "Venti"
     ],
     "whats_included": {},
-    "image": null
+    "image": "General Roast.png"
   },
   {
-    "name": "Decaf Roast - Pike Place® Roast",
+    "name": "Decaf Roast",
     "category": "drink",
     "sizes": [
       "Short 8 fl oz",
@@ -505,7 +505,7 @@
       "Venti 20 fl oz"
     ],
     "whats_included": {},
-    "image": null
+    "image": "General Roast.png"
   },
   {
     "name": "Caffè Misto",
@@ -1134,7 +1134,7 @@
     "image": "Sugar-Free Caramel Protein Latte.png"
   },
   {
-    "name": "Starbucks® Blonde Vanilla Latte",
+    "name": "Blonde Vanilla Latte",
     "category": "drink",
     "sizes": [
       "Short 8 fl oz",
@@ -1201,7 +1201,7 @@
         "default": 2
       }
     },
-    "image": "Starbucks® Blonde Vanilla Latte.png"
+    "image": "Blonde Vanilla Latte.png"
   },
   {
     "name": "Cappuccino",
@@ -1910,14 +1910,14 @@
     "image": "Espresso Con Panna.png"
   },
   {
-    "name": "Coffee Traveler – Pike Place® Roast",
+    "name": "Coffee Traveler – Pike Place Roast",
     "category": "drink",
     "sizes": [],
     "whats_included": {},
     "image": "Coffee Traveler – Pike Place® Roast.png"
   },
   {
-    "name": "Coffee Traveler – Decaf Pike Place® Roast",
+    "name": "Coffee Traveler – Decaf Pike Place Roast",
     "category": "drink",
     "sizes": [],
     "whats_included": {},
@@ -2032,7 +2032,7 @@
     "image": "Matcha Latte.png"
   },
   {
-    "name": "Matcha Crème Frappuccino® Blended Beverage",
+    "name": "Matcha Crème Frappuccino Blended Beverage",
     "category": "drink",
     "temperature": "iced",
     "sizes": [
@@ -2078,7 +2078,7 @@
         ]
       }
     },
-    "image": "Matcha Crème Frappuccino® Blended Beverage.png"
+    "image": "Matcha Crème Frappuccino Blended Beverage.png"
   },
   {
     "name": "Iced Dubai Chocolate Matcha",
@@ -2893,9 +2893,9 @@
       ],
       "Sweeteners - Add Sweetener Packets": [
         "Honey",
-        "Sugar In The Raw®",
-        "Splenda®",
-        "Stevia in the Raw®",
+        "Raw Sugar",
+        "Splenda",
+        "Raw Stevia",
         "Sugar"
       ]
     },
@@ -2911,7 +2911,7 @@
   {
     "sub_category": "More Breakfast Classics",
     "category": "food",
-    "name": "Ellenos® Muesli Yogurt – No Added Sugar",
+    "name": "Ellenos Muesli Yogurt – No Added Sugar",
     "options": {},
     "image": "Ellenos® Muesli Yogurt – No Added Sugar.png"
   },

@@ -171,6 +171,38 @@
       "id": "43b92555-5413-4993-a61b-e9f9182b3215",
       "timestamp": "2026-04-17T04:50:03.231Z",
       "audioFilename": "20260416_215015_386_Sarah.wav"
+    },
+    {
+      "name": "Sarah",
+      "age": "30s",
+      "gender": "female",
+      "region": "New York",
+      "personality": [
+        "fast talker",
+        "impatient",
+        "precise"
+      ],
+      "orderText": "Hi, um, can I just get a Grande Blonde Vanilla Latte? Make that extra hot, please, and with oat milk instead of regular. Oh, and also, could I get one of those chocolate pistachio loaves? Just quickly warmed, please. That's all.",
+      "canonicalOrder": "Grande Starbucks® Blonde Vanilla Latte, extra hot, with oat milk, Chocolate Pistachio Loaf, Warmed",
+      "id": "f85c2a1d-1192-4cc2-8f52-9691a028919f",
+      "timestamp": "2026-04-17T19:48:04.197Z",
+      "audioFilename": "20260417_124812_824_Sarah.wav"
+    },
+    {
+      "name": "Brenda",
+      "age": "50s",
+      "gender": "female",
+      "region": "Ohio",
+      "personality": [
+        "slightly indecisive",
+        "friendly",
+        "a bit chatty"
+      ],
+      "orderText": "Oh, hi there! Um, I think I'll do... hmm. Let's see. You know what, that Pistachio Latte sounds really good today. Yeah. Can I get a grande, please? And could you make that, like, extra hot for me? And with oat milk, if you have that? Oh, and also, I'll grab one of those... the little vanilla bean scones. They're so good. Thanks!",
+      "canonicalOrder": "Grande Pistachio Latte, extra hot, with oat milk, Petite Vanilla Bean Scone",
+      "id": "c42ebc3a-c99f-4ac0-ae60-d8a57017dd28",
+      "timestamp": "2026-04-17T19:48:18.983Z",
+      "audioFilename": "20260417_124834_226_Brenda.wav"
     }
   ]
 }

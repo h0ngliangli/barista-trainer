@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import { MENU_SUMMARY } from "./menu";
+import { MODIFIERS, randomPickDrinkAndFood } from "./menu";
 
 const genai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY! });
 
@@ -19,8 +19,11 @@ export async function generateCustomer(): Promise<CustomerProfile> {
 
   const prompt = `You are generating a realistic coffee shop customer for a barista training app.
 
-Menu available:
-${MENU_SUMMARY}
+Possible Food and Drink:
+${JSON.stringify(randomPickDrinkAndFood())}
+
+Possible modifiers:
+${JSON.stringify(MODIFIERS)}
 
 Return a JSON object with EXACTLY these fields:
 {
