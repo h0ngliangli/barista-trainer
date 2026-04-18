@@ -25,17 +25,11 @@
           "customizable": true
         }
       },
-      "cold_foam": [
-        "Ube Coconut Cream Cold Foam"
-      ],
-      "milk": [
-        "Oatmilk"
-      ],
+      "cold_foam": ["Ube Coconut Cream Cold Foam"],
+      "milk": ["Oatmilk"],
       "espresso": {
         "default_shots": 3,
-        "options": [
-          "Blonde Espresso"
-        ]
+        "options": ["Blonde Espresso"]
       }
     },
     "image": "Iced Ube Coconut Cream Shaken Espresso.png"
@@ -53,12 +47,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Cold Brew.png"
@@ -100,12 +89,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Toasted Coconut Cream Cold Brew.png"
@@ -147,12 +131,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Pistachio Cream Cold Brew.png"
@@ -184,12 +163,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Vanilla Sweet Cream Cold Brew.png"
@@ -221,12 +195,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Salted Caramel Cream Cold Brew.png"
@@ -258,12 +227,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Chocolate Cream Cold Brew.png"
@@ -295,12 +259,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Nondairy Vanilla Sweet Cream Cold Brew.png"
@@ -332,12 +291,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Nondairy Salted Caramel Cream Cold Brew.png"
@@ -369,12 +323,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Cold Brew with Nondairy Vanilla Sweet Cream Cold Foam.png"
@@ -406,12 +355,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Nondairy Chocolate Cream Cold Brew.png"
@@ -419,20 +363,14 @@
   {
     "name": "Nitro Cold Brew",
     "category": "drink",
-    "sizes": [
-      "Tall 12 fl oz",
-      "Grande 16 fl oz"
-    ],
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz"],
     "whats_included": {},
     "image": "Nitro Cold Brew.png"
   },
   {
     "name": "Vanilla Sweet Cream Nitro Cold Brew",
     "category": "drink",
-    "sizes": [
-      "Tall 12 fl oz",
-      "Grande 16 fl oz"
-    ],
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz"],
     "whats_included": {
       "splash_of_vanilla_sweet_cream": {
         "type": "select",
@@ -486,12 +424,7 @@
   {
     "name": "Sun-Dried Ethiopia Highlands",
     "category": "drink",
-    "sizes": [
-      "Short",
-      "Tall",
-      "Grande",
-      "Venti"
-    ],
+    "sizes": ["Short", "Tall", "Grande", "Venti"],
     "whats_included": {},
     "image": "General Roast.png"
   },
@@ -537,21 +470,12 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       }
     },
     "image": "Caffè Misto.png"
@@ -616,21 +540,12 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       },
       "espresso_roast": {
         "type": "select",
@@ -686,21 +601,12 @@
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       },
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "espresso_roast": {
         "type": "select",
@@ -756,21 +662,12 @@
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       },
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "espresso_roast": {
         "type": "select",
@@ -836,21 +733,12 @@
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       },
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "espresso_roast": {
         "type": "select",
@@ -900,12 +788,7 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "shots": {
         "type": "quantity",
@@ -943,12 +826,7 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "shots": {
         "type": "quantity",
@@ -986,12 +864,7 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "shots": {
         "type": "quantity",
@@ -1055,21 +928,12 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       },
       "espresso_roast": {
         "type": "select",
@@ -1119,12 +983,7 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "shots": {
         "type": "quantity",
@@ -1168,21 +1027,12 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       },
       "espresso_roast": {
         "type": "select",
@@ -1234,21 +1084,12 @@
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       },
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "espresso_roast": {
         "type": "select",
@@ -1314,21 +1155,12 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       },
       "espresso_roast": {
         "type": "select",
@@ -1394,21 +1226,12 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       },
       "espresso_roast": {
         "type": "select",
@@ -1447,19 +1270,12 @@
       "milk": {
         "type": "select",
         "default": "2% Milk",
-        "options": [
-          "2% Milk"
-        ]
+        "options": ["2% Milk"]
       },
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "espresso_roast": {
         "type": "select",
@@ -1525,21 +1341,12 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       },
       "espresso_roast": {
         "type": "select",
@@ -1591,19 +1398,12 @@
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       },
       "shot_style": {
         "type": "select",
         "default": "Ristretto",
-        "options": [
-          "Ristretto",
-          "Long Shot"
-        ]
+        "options": ["Ristretto", "Long Shot"]
       },
       "espresso_roast": {
         "type": "select",
@@ -1650,35 +1450,22 @@
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       },
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "espresso_roast": {
         "type": "select",
         "default": "Blonde Espresso",
-        "options": [
-          "Blonde Espresso"
-        ]
+        "options": ["Blonde Espresso"]
       },
       "shot_style": {
         "type": "select",
         "default": "Ristretto",
-        "options": [
-          "Ristretto"
-        ]
+        "options": ["Ristretto"]
       },
       "shots": {
         "type": "quantity",
@@ -1727,25 +1514,17 @@
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       },
       "shot_style": {
         "type": "select",
         "default": "Ristretto",
-        "options": [
-          "Ristretto"
-        ]
+        "options": ["Ristretto"]
       },
       "espresso_roast": {
         "type": "select",
         "default": "Blonde Espresso",
-        "options": [
-          "Blonde Espresso"
-        ]
+        "options": ["Blonde Espresso"]
       },
       "shots": {
         "type": "quantity",
@@ -1794,35 +1573,22 @@
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       },
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "espresso_roast": {
         "type": "select",
         "default": "Blonde Espresso",
-        "options": [
-          "Blonde Espresso"
-        ]
+        "options": ["Blonde Espresso"]
       },
       "shot_style": {
         "type": "select",
         "default": "Ristretto",
-        "options": [
-          "Ristretto"
-        ]
+        "options": ["Ristretto"]
       },
       "shots": {
         "type": "quantity",
@@ -1927,11 +1693,7 @@
     "name": "Iced Matcha Latte",
     "category": "drink",
     "temperature": "iced",
-    "sizes": [
-      "Tall 12 fl oz",
-      "Grande 16 fl oz",
-      "Venti 24 fl oz"
-    ],
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
     "whats_included": {
       "tea_matcha_powder_scoops": {
         "type": "quantity",
@@ -1962,12 +1724,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Iced Matcha Latte.png"
@@ -2012,21 +1769,12 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       },
       "temperature": {
         "type": "select",
         "default": "Steamed Hot",
-        "options": [
-          "Steamed Hot",
-          "Warm",
-          "Extra Hot"
-        ]
+        "options": ["Steamed Hot", "Warm", "Extra Hot"]
       }
     },
     "image": "Matcha Latte.png"
@@ -2035,11 +1783,7 @@
     "name": "Matcha Crème Frappuccino Blended Beverage",
     "category": "drink",
     "temperature": "iced",
-    "sizes": [
-      "Tall 12 fl oz",
-      "Grande 16 fl oz",
-      "Venti 24 fl oz"
-    ],
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
     "whats_included": {
       "tea_matcha_powder_scoops": {
         "type": "quantity",
@@ -2084,11 +1828,7 @@
     "name": "Iced Dubai Chocolate Matcha",
     "category": "drink",
     "temperature": "iced",
-    "sizes": [
-      "Tall 12 fl oz",
-      "Grande 16 fl oz",
-      "Venti 24 fl oz"
-    ],
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
     "whats_included": {
       "flavors_pistachio_sauce": {
         "type": "quantity",
@@ -2139,12 +1879,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Iced Dubai Chocolate Matcha.png"
@@ -2153,11 +1888,7 @@
     "name": "Iced Mango Cream Matcha",
     "category": "drink",
     "temperature": "iced",
-    "sizes": [
-      "Tall 12 fl oz",
-      "Grande 16 fl oz",
-      "Venti 24 fl oz"
-    ],
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
     "whats_included": {
       "tea_matcha_powder_scoops": {
         "type": "quantity",
@@ -2198,12 +1929,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Iced Mango Cream Matcha.png"
@@ -2212,11 +1938,7 @@
     "name": "Iced Lavender Cream Matcha",
     "category": "drink",
     "temperature": "iced",
-    "sizes": [
-      "Tall 12 fl oz",
-      "Grande 16 fl oz",
-      "Venti 24 fl oz"
-    ],
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
     "whats_included": {
       "tea_matcha_powder_scoops": {
         "type": "quantity",
@@ -2257,12 +1979,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Iced Lavender Cream Matcha.png"
@@ -2271,11 +1988,7 @@
     "name": "Iced Banana Bread Matcha",
     "category": "drink",
     "temperature": "iced",
-    "sizes": [
-      "Tall 12 fl oz",
-      "Grande 16 fl oz",
-      "Venti 24 fl oz"
-    ],
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
     "whats_included": {
       "flavors_brown_sugar_syrup_pumps": {
         "type": "quantity",
@@ -2326,12 +2039,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Iced Banana Bread Matcha.png"
@@ -2340,11 +2048,7 @@
     "name": "Iced Double Berry Matcha",
     "category": "drink",
     "temperature": "iced",
-    "sizes": [
-      "Tall 12 fl oz",
-      "Grande 16 fl oz",
-      "Venti 24 fl oz"
-    ],
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
     "whats_included": {
       "tea_matcha_powder_scoops": {
         "type": "quantity",
@@ -2385,12 +2089,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       },
       "add_ins_strawberry_puree": {
         "type": "select",
@@ -2409,11 +2108,7 @@
     "name": "Iced Protein Matcha",
     "category": "drink",
     "temperature": "iced",
-    "sizes": [
-      "Tall 12 fl oz",
-      "Grande 16 fl oz",
-      "Venti 24 fl oz"
-    ],
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
     "whats_included": {
       "tea_matcha_powder_scoops": {
         "type": "quantity",
@@ -2426,12 +2121,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Iced Protein Matcha.png"
@@ -2458,12 +2148,7 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       }
     },
     "image": "Protein Matcha.png"
@@ -2472,11 +2157,7 @@
     "name": "Iced Sugar-Free Vanilla Protein Matcha",
     "category": "drink",
     "temperature": "iced",
-    "sizes": [
-      "Tall 12 fl oz",
-      "Grande 16 fl oz",
-      "Venti 24 fl oz"
-    ],
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
     "whats_included": {
       "flavors_sugar_free_vanilla_syrup_pumps": {
         "type": "quantity",
@@ -2489,12 +2170,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Iced Sugar-Free Vanilla Protein Matcha.png"
@@ -2521,12 +2197,7 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       }
     },
     "image": "Sugar-Free Vanilla Protein Matcha.png"
@@ -2535,11 +2206,7 @@
     "name": "Iced Caramel Protein Matcha",
     "category": "drink",
     "temperature": "iced",
-    "sizes": [
-      "Tall 12 fl oz",
-      "Grande 16 fl oz",
-      "Venti 24 fl oz"
-    ],
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
     "whats_included": {
       "flavors_caramel_syrup_pumps": {
         "type": "quantity",
@@ -2552,12 +2219,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Iced Caramel Protein Matcha.png"
@@ -2584,12 +2246,7 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       }
     },
     "image": "Caramel Protein Matcha.png"
@@ -2598,11 +2255,7 @@
     "name": "Iced Sugar-Free Caramel Protein Matcha",
     "category": "drink",
     "temperature": "iced",
-    "sizes": [
-      "Tall 12 fl oz",
-      "Grande 16 fl oz",
-      "Venti 24 fl oz"
-    ],
+    "sizes": ["Tall 12 fl oz", "Grande 16 fl oz", "Venti 24 fl oz"],
     "whats_included": {
       "flavors_sugar_free_caramel_syrup_pumps": {
         "type": "quantity",
@@ -2615,12 +2268,7 @@
       "add_ins_ice": {
         "type": "select",
         "default": "Ice",
-        "options": [
-          "Extra Ice",
-          "Light Ice",
-          "No Ice",
-          "Ice"
-        ]
+        "options": ["Extra Ice", "Light Ice", "No Ice", "Ice"]
       }
     },
     "image": "Iced Sugar-Free Caramel Protein Matcha.png"
@@ -2647,12 +2295,7 @@
       "foam": {
         "type": "select",
         "default": "Foam",
-        "options": [
-          "Extra Foam",
-          "Foam",
-          "Light Foam",
-          "No Foam"
-        ]
+        "options": ["Extra Foam", "Foam", "Light Foam", "No Foam"]
       }
     },
     "image": "Sugar-Free Caramel Protein Matcha.png"
@@ -2662,12 +2305,8 @@
     "category": "food",
     "name": "Egg, Pesto & Mozzarella Sandwich",
     "options": {
-      "Sandwich Options": [
-        "Remove Cheese Slice"
-      ],
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Sandwich Options": ["Remove Cheese Slice"],
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Egg, Pesto & Mozzarella Sandwich.png"
   },
@@ -2681,9 +2320,7 @@
         "Remove Egg Patty",
         "Remove Meat"
       ],
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Bacon, Gouda & Egg Sandwich.png"
   },
@@ -2697,9 +2334,7 @@
         "Remove Egg Patty",
         "Remove Meat"
       ],
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Double-Smoked Bacon, Cheddar & Egg Sandwich.png"
   },
@@ -2713,9 +2348,7 @@
         "Remove Egg Patty",
         "Remove Meat"
       ],
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Sausage, Cheddar & Egg Sandwich.png"
   },
@@ -2729,9 +2362,7 @@
         "Remove Egg Patty",
         "Remove Meat"
       ],
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Turkey Bacon, Cheddar & Egg White Sandwich.png"
   },
@@ -2745,9 +2376,7 @@
         "Remove Egg Patty",
         "Remove Meat"
       ],
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Impossible™ Breakfast Sandwich.png"
   },
@@ -2763,9 +2392,7 @@
     "category": "food",
     "name": "Bacon, Sausage & Egg Wrap",
     "options": {
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Bacon, Sausage & Egg Wrap.png"
   },
@@ -2774,9 +2401,7 @@
     "category": "food",
     "name": "Spinach, Feta & Egg White Wrap",
     "options": {
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Spinach, Feta & Egg White Wrap.png"
   },
@@ -2785,9 +2410,7 @@
     "category": "food",
     "name": "Truffle, Mushroom & Brie Egg Bites",
     "options": {
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Truffle, Mushroom & Brie Egg Bites.png"
   },
@@ -2796,9 +2419,7 @@
     "category": "food",
     "name": "Italian Sausage Egg Bites",
     "options": {
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Italian Sausage Egg Bites.png"
   },
@@ -2807,9 +2428,7 @@
     "category": "food",
     "name": "Bacon & Gruyère Egg Bites",
     "options": {
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Bacon & Gruyère Egg Bites.png"
   },
@@ -2818,9 +2437,7 @@
     "category": "food",
     "name": "Egg White & Roasted Red Pepper Egg Bites",
     "options": {
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Egg White & Roasted Red Pepper Egg Bites.png"
   },
@@ -2829,9 +2446,7 @@
     "category": "food",
     "name": "Potato, Cheddar & Chive Bakes",
     "options": {
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Potato, Cheddar & Chive Bakes.png"
   },
@@ -2941,11 +2556,10 @@
     "category": "food",
     "name": "Yuzu Citrus Blossom",
     "options": {
-      "Warming": [
-        "Warmed"
-      ]
+      "Warming": ["Warmed"]
     },
-    "image": "Yuzu Citrus Blossom_.png"
+    "image": "Yuzu Citrus Blossom_.png",
+    "note": "A citrus flavored croissant and muffin hybrid. (可颂的酥脆，玛芬的中空，柚子的清香)"
   },
   {
     "sub_category": "Croissants & Danishes",
@@ -2959,9 +2573,7 @@
     "category": "food",
     "name": "Cheese Danish",
     "options": {
-      "Warming": [
-        "Warmed"
-      ]
+      "Warming": ["Warmed"]
     },
     "image": "Cheese Danish.png"
   },
@@ -2977,13 +2589,8 @@
     "category": "food",
     "name": "Butter Croissant",
     "options": {
-      "Butter & Spreads": [
-        "Butter",
-        "Plain Cream Cheese"
-      ],
-      "Warming": [
-        "Warmed"
-      ]
+      "Butter & Spreads": ["Butter", "Plain Cream Cheese"],
+      "Warming": ["Warmed"]
     },
     "image": "Butter Croissant.png"
   },
@@ -2992,9 +2599,7 @@
     "category": "food",
     "name": "Chocolate Croissant",
     "options": {
-      "Warming": [
-        "Warmed"
-      ]
+      "Warming": ["Warmed"]
     },
     "image": "Chocolate Croissant.png"
   },
@@ -3003,10 +2608,7 @@
     "category": "food",
     "name": "Chocolate Pistachio Loaf",
     "options": {
-      "Warming": [
-        "Warmed",
-        "Not Warmed"
-      ]
+      "Warming": ["Warmed", "Not Warmed"]
     },
     "image": "Chocolate Pistachio Loaf.png"
   },
@@ -3022,10 +2624,7 @@
     "category": "food",
     "name": "Banana, Walnut & Pecan Loaf",
     "options": {
-      "Warming": [
-        "Warmed",
-        "Not Warmed"
-      ]
+      "Warming": ["Warmed", "Not Warmed"]
     },
     "image": "Banana, Walnut & Pecan Loaf.png"
   },
@@ -3041,10 +2640,7 @@
     "category": "food",
     "name": "Pumpkin & Pepita Loaf",
     "options": {
-      "Warming": [
-        "Warmed",
-        "Not Warmed"
-      ]
+      "Warming": ["Warmed", "Not Warmed"]
     },
     "image": "Pumpkin & Pepita Loaf.png"
   },
@@ -3053,10 +2649,7 @@
     "category": "food",
     "name": "Cinnamon Coffee Cake",
     "options": {
-      "Warming": [
-        "Warmed",
-        "Not Warmed"
-      ]
+      "Warming": ["Warmed", "Not Warmed"]
     },
     "image": "Cinnamon Coffee Cake.png"
   },
@@ -3065,9 +2658,7 @@
     "category": "food",
     "name": "Blueberry Streusel Muffin",
     "options": {
-      "Warming": [
-        "Warmed"
-      ]
+      "Warming": ["Warmed"]
     },
     "image": "Blueberry Streusel Muffin.png"
   },
@@ -3083,14 +2674,8 @@
     "category": "food",
     "name": "Plain Bagel",
     "options": {
-      "Butter & Spreads": [
-        "Butter",
-        "Plain Cream Cheese"
-      ],
-      "Warming": [
-        "Warmed",
-        "Not Warmed"
-      ]
+      "Butter & Spreads": ["Butter", "Plain Cream Cheese"],
+      "Warming": ["Warmed", "Not Warmed"]
     },
     "image": "Plain Bagel.png"
   },
@@ -3099,14 +2684,8 @@
     "category": "food",
     "name": "Everything Bagel",
     "options": {
-      "Butter & Spreads": [
-        "Butter",
-        "Plain Cream Cheese"
-      ],
-      "Warming": [
-        "Warmed",
-        "Not Warmed"
-      ]
+      "Butter & Spreads": ["Butter", "Plain Cream Cheese"],
+      "Warming": ["Warmed", "Not Warmed"]
     },
     "image": "Everything Bagel.png"
   },
@@ -3143,9 +2722,7 @@
     "category": "food",
     "name": "Dubai Chocolate Bite",
     "options": {
-      "Warming": [
-        "Warmed"
-      ]
+      "Warming": ["Warmed"]
     },
     "image": "Dubai Chocolate Bite.png"
   },
@@ -3154,9 +2731,7 @@
     "category": "food",
     "name": "Berry Blondie",
     "options": {
-      "Warming": [
-        "Not Warmed"
-      ]
+      "Warming": ["Not Warmed"]
     },
     "image": "Berry Blondie.png"
   },
@@ -3165,9 +2740,7 @@
     "category": "food",
     "name": "Chocolate Chip Cookie",
     "options": {
-      "Warming": [
-        "Warmed"
-      ]
+      "Warming": ["Warmed"]
     },
     "image": "Chocolate Chip Cookie.png"
   },
@@ -3176,9 +2749,7 @@
     "category": "food",
     "name": "Double Chocolate Brownie",
     "options": {
-      "Warming": [
-        "Warmed"
-      ]
+      "Warming": ["Warmed"]
     },
     "image": "Double Chocolate Brownie.png"
   },
@@ -3187,9 +2758,7 @@
     "category": "food",
     "name": "Crispy Grilled Cheese on Sourdough",
     "options": {
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Crispy Grilled Cheese on Sourdough.png"
   },
@@ -3198,9 +2767,7 @@
     "category": "food",
     "name": "Ham & Swiss on Baguette",
     "options": {
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Ham & Swiss on Baguette.png"
   },
@@ -3209,9 +2776,7 @@
     "category": "food",
     "name": "Tomato & Mozzarella on Focaccia",
     "options": {
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Tomato & Mozzarella on Focaccia.png"
   },
@@ -3227,9 +2792,7 @@
     "category": "food",
     "name": "Spicy Falafel Pocket",
     "options": {
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Spicy Falafel Pocket.png"
   },
@@ -3238,9 +2801,7 @@
     "category": "food",
     "name": "Jalapeño Chicken Pocket",
     "options": {
-      "Condiments": [
-        "Add Sriracha"
-      ]
+      "Condiments": ["Add Sriracha"]
     },
     "image": "Jalapeño Chicken Pocket.png"
   },

@@ -320,6 +320,126 @@
       ],
       "timestamp": "2026-04-17T21:05:04.233Z",
       "audioFilename": "20260417_140519_350_Eleanor.wav"
+    },
+    {
+      "name": "Emily",
+      "age": "30s",
+      "gender": "female",
+      "region": "Pacific Northwest",
+      "personality": [
+        "a bit indecisive",
+        "friendly",
+        "speaks quickly"
+      ],
+      "orderText": "Hi there! Um, could I get, like, a... a doppio espresso? Yeah, doppio. And can I have that with blonde roast, please? Oh, and actually, could you do an extra shot? So three shots total. And, uh, with oat milk, please. And could I get vanilla syrup? Just half sweet, though. Oh, and also, a Yuzu Citrus Blossom, warmed.",
+      "canonicalOrder": "Doppio Espresso, Blonde Espresso, with an extra shot, with oat milk, with vanilla syrup, half sweet, Yuzu Citrus Blossom, Warmed",
+      "menuItems": [
+        "Espresso",
+        "Yuzu Citrus Blossom"
+      ],
+      "id": "ed896d54-9178-444e-9bf3-82b8c643389d",
+      "menuItemImages": [
+        "/products/Espresso.png",
+        "/products/Yuzu Citrus Blossom_.png"
+      ],
+      "timestamp": "2026-04-18T04:21:06.578Z",
+      "audioFilename": "20260417_212117_270_Emily.wav"
+    },
+    {
+      "name": "Chloe",
+      "age": "20s",
+      "gender": "female",
+      "region": "Seattle",
+      "personality": [
+        "a little rushed",
+        "sweet",
+        "efficient"
+      ],
+      "orderText": "Oh, hi! Um, okay, so I need to grab something quickly. Can I get a Toasted Coconut Cream Cold Brew? Grande, please. And actually, could you do that with light ice? And, um, you know what, I'll also grab a Chocolate Pistachio Loaf. Could that be warmed up, please? Thanks!",
+      "canonicalOrder": "Grande Toasted Coconut Cream Cold Brew, light ice, Warmed Chocolate Pistachio Loaf",
+      "menuItems": [
+        "Toasted Coconut Cream Cold Brew",
+        "Chocolate Pistachio Loaf"
+      ],
+      "id": "8abcc7e5-d020-4e50-a844-15f8e781e74a",
+      "menuItemImages": [
+        "/products/Toasted Coconut Cream Cold Brew.png",
+        "/products/Chocolate Pistachio Loaf.png"
+      ],
+      "timestamp": "2026-04-18T04:21:23.185Z",
+      "audioFilename": "20260417_212133_066_Chloe.wav"
+    },
+    {
+      "name": "Brenda",
+      "age": "50s",
+      "gender": "female",
+      "region": "Florida",
+      "personality": [
+        "sweet",
+        "chatty",
+        "particular"
+      ],
+      "orderText": "Hi there! How are you today? Could I get, um, a Brown Sugar Oatmilk Cortado, please? And actually, could we do that, like, extra hot? I always find they cool down so quickly. Oh, and I prefer it with light foam, if that's possible. And then, do you have those Cheese Danishes? Yes, one of those, warmed please. Thank you so much, sweetie!",
+      "canonicalOrder": "Brown Sugar Oatmilk Cortado, extra hot, light foam, Cheese Danish, Warmed",
+      "menuItems": [
+        "Brown Sugar Oatmilk Cortado",
+        "Cheese Danish"
+      ],
+      "id": "e34b443d-f7d3-4fbd-81ec-71d3a24704fe",
+      "menuItemImages": [
+        "/products/Brown Sugar Oatmilk Cortado.png",
+        "/products/Cheese Danish.png"
+      ],
+      "timestamp": "2026-04-18T04:25:14.820Z",
+      "audioFilename": "20260417_212525_636_Brenda.wav"
+    },
+    {
+      "name": "Sarah",
+      "age": "30s",
+      "gender": "female",
+      "region": "Pacific Northwest",
+      "personality": [
+        "a bit hesitant",
+        "friendly",
+        "tries to be healthy"
+      ],
+      "orderText": "Hi there! Um, could I get a... let's see. A Vanilla Sweet Cream Cold Brew, please? Yeah, a Grande. And actually, could you do it, like, half sweet? I'm trying to cut back a little, you know? And could I get just a quarter inch splash of the vanilla sweet cream? Like, not too much. Oh, and I'll also grab one of those... the Banana, Walnut & Pecan Loaf. Could I get that warmed up, please? Thanks!",
+      "canonicalOrder": "Grande Vanilla Sweet Cream Cold Brew, half sweet, 1/4 Inch Splash of Vanilla Sweet Cream, Warmed Banana, Walnut & Pecan Loaf",
+      "menuItems": [
+        "Vanilla Sweet Cream Cold Brew",
+        "Banana, Walnut & Pecan Loaf"
+      ],
+      "id": "9049e01e-db96-4f85-a0d8-18c4a2637241",
+      "menuItemImages": [
+        "/products/Vanilla Sweet Cream Cold Brew.png",
+        "/products/Banana, Walnut & Pecan Loaf.png"
+      ],
+      "timestamp": "2026-04-18T04:26:39.974Z",
+      "audioFilename": "20260417_212652_220_Sarah.wav"
+    },
+    {
+      "name": "Chloe",
+      "age": "30s",
+      "gender": "female",
+      "region": "New York City",
+      "personality": [
+        "a bit rushed",
+        "friendly",
+        "decisive"
+      ],
+      "orderText": "Hey! Um, can I get a Grande Iced Banana Bread Matcha? Yes, please. And could I get that with oat milk? Oh, and actually, could I do light ice on that? Yeah, just a little. And then, uh, can I also grab one of those Pumpkin & Pepita Loaves? And could you warm that up for me? Thanks so much!",
+      "canonicalOrder": "Grande Iced Banana Bread Matcha, with oat milk, light ice, Pumpkin & Pepita Loaf, Warmed",
+      "menuItems": [
+        "Iced Banana Bread Matcha",
+        "Pumpkin & Pepita Loaf"
+      ],
+      "id": "b9bc8b87-beb4-4f3e-92d7-edaad6c6feac",
+      "menuItemImages": [
+        "/products/Iced Banana Bread Matcha.png",
+        "/products/Pumpkin & Pepita Loaf.png"
+      ],
+      "timestamp": "2026-04-18T04:28:03.986Z",
+      "audioFilename": "20260417_212814_523_Chloe.wav"
     }
   ]
 }
