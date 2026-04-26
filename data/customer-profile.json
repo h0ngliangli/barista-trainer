@@ -15,7 +15,7 @@
       "timestamp": "2026-04-16T23:35:00.949Z"
     },
     {
-      "name": "Sarah",
+      "name": "Carol",
       "age": "30s",
       "gender": "female",
       "region": "New York",
@@ -29,8 +29,8 @@
       "timestamp": "2026-04-16T23:35:14.555Z"
     },
     {
-      "name": "Sarah",
-      "age": "30s",
+      "name": "Kathy",
+      "age": "40s",
       "gender": "female",
       "region": "New York",
       "personality": [
@@ -440,6 +440,30 @@
       ],
       "timestamp": "2026-04-18T04:28:03.986Z",
       "audioFilename": "20260417_212814_523_Chloe.wav"
+    },
+    {
+      "name": "Chloe",
+      "age": "20s",
+      "gender": "female",
+      "region": "California",
+      "personality": [
+        "a little shy",
+        "friendly",
+        "indecisive"
+      ],
+      "orderText": "Hi there! Um, so, I'm thinking... a Grande Vanilla Protein Latte? Yeah, that one. And, could I get that with oat milk, please? Oh, and also, could it be, like, half sweet? And actually, sorry, could I get an extra shot in that too? Yeah, just one extra. And then, I'll also grab a Chocolate Croissant, and if you could just warm that up for me, that'd be great. Thanks!",
+      "canonicalOrder": "Grande Vanilla Protein Latte, with oat milk, half sweet, with an extra shot, Chocolate Croissant Warmed",
+      "menuItems": [
+        "Vanilla Protein Latte",
+        "Chocolate Croissant"
+      ],
+      "id": "6ce87359-f2a3-4af6-8001-ea1707d843ba",
+      "menuItemImages": [
+        "/products/Vanilla Protein Latte.png",
+        "/products/Chocolate Croissant.png"
+      ],
+      "timestamp": "2026-04-18T06:45:19.011Z",
+      "audioFilename": "20260417_234532_027_Chloe.wav"
     }
   ]
 }
